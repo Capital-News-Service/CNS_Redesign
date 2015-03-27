@@ -13,28 +13,59 @@ COLORS:
 
 	NEAR BLACK: 1e1e1e
 
-	LIGHTER BLACK: 444443;
+	LIGHTER BLACK: 444443; (262626)
 
-	RED: c6240a
+	RED: #D62124
 
-	GOLD: ffd500
+	GOLD: ffd500 --> ffd400
 
 	WHITE
 
 */
 
-
 h1 {
 	font-weight: 700;
 	line-height: 1.5;
 	margin-top: 1em;
-	background: #1e1e1e;
+	background: #262626;
 	display: inline;
 	color: #fff;
 	padding: 3px;
 	word-wrap: normal;
 }
 
+/* arrow code from stackoverflow.com/questions/16237181/how-to-add-bordered-triangle-over-a-div-tag */
+.arrow_box {
+    position: relative;
+    background: #262626;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+.arrow_box:after, 
+.arrow_box:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #262626;
+    border-width: 19px;
+    left: 50%;
+    margin-left: -19px;
+}
+.arrow_box:before {
+    border-color: rgba(113, 158, 206, 0);
+    border-width: 20px;
+    left: 50%;
+    margin-left: -20px;
+}
 
 /*
 
@@ -58,12 +89,13 @@ h1 {
 #logo {
   background-color: #ffd500;
   display: table; 
+  position: relative;
   height: 100px;
   margin-left: 25px;
   overflow: hidden;
   padding: 0 10px;
   width: 100px;
-  z-index: -1;
+  z-index: 11;
 }
 #logo:first-child {
   margin-left: 0;
@@ -90,11 +122,11 @@ h1 {
 }
 
 .topnavbar {
-	z-index: -1;
+	z-index: 10;
 }
 
 #topnavcontainer{
-	background-color: black;
+	background-color: #262626;
 }
 
 
@@ -117,51 +149,225 @@ h1 {
 
 ***********************************************
 
+          Top of Page
+
+***********************************************
+
+*/
+
+#toppage {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+#slider_wrapper {
+  padding-left: 0;
+  margin: 0;
+}
+
+#main_slider {
+  width: 100%;
+  height: 370px;
+  background-color: black;
+}
+
+#latest_wrapper {
+  padding-right: 0;
+  padding: 0;
+  margin: 0;
+}
+#latest_header {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  padding: 0;
+  margin-top: 20px;
+}
+#latest_arrow {
+    position: relative;
+    background: #d62124;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    font-size: 1.2em;
+    padding: 8px;
+}
+#latest_arrow:after, 
+#latest_arrow:before {
+    top: 100%;
+}
+#latest_arrow:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #D62124;
+}
+
+#latest_body {
+  width: 100%;
+  background-color: #444443;
+  height: 320px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/*
+
+***********************************************
+
 					CNS TV
 
 ***********************************************
 
 */
 
-#cnstv_logo {
+#cnstv_bar {
   background-color: #ffd500;
   display: table; 
-  height: 25%;
   width: 100%;
-  padding-left: 10px;
+  margin: 20px 0;
 }
-#cnstv_logo:first-child {
+#cnstv_bar:first-child {
   margin-left: 0;
 }
-#cnstv_logo_content {
+#cnstv_text {
   color: #fff;
   display: table-cell; 
-  font-size: 3.1em;
-  font-weight: 700;
   text-align: left; 
   vertical-align: middle; 
-  line-height: 0.6em;
+}
+#tvname {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 0.63em;
+}
+#tvsubtext {
+  display: none;
 }
 #cnstv_body {
-	height: 380px;
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  margin: 0;
+}
+
+/* THIS CODE IS FOR TABLET+
+#cnstv_subtext {
+  color: #6f6e6e;
+  display: table-cell; 
+  font-size: 1em;
+  font-weight: 700;
+  text-align: right; 
+  vertical-align: middle; 
+  margin: 7px 0 0 0;
+}
+
+
+#cnstv_body {
+	height: 100%;
 	width: 100%;
+  margin: 0;
 }
 #thumbnails {
 	padding:0;
 }
 .videothumbnail {
-	width: 240px;
+	width: 100%;
 	height: 120px;
 	margin: 0 0 25px 0;
 	background-color: black;
+  top: 0;
+  left: 0;
+  padding: 0;
+  position: relative;
 }
-/*#main_video {
-	width: 620px;
+#main_video_wrapper {
+  padding-right: 0;
+}
+#main_video {
+	width: 100%;
 	height: 410px;
-	margin: 0 0 0 40px;
 	background-color: black;
+  margin: 0;
 }
+
+.arrow_box_tv {
+  width: 45px;
+  height: 40px;
+  background-color: #ffd400;
+  position: absolute;
+  top: 66.5%;
+}
+
+.arrow_right {
+  width: 50%; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent; 
+  border-left:27px solid white; 
+  margin: 5px 10px;
+}
+
+.arrow_right_featured {
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent; 
+  border-left:54px solid white; 
+  margin: 10px 20px;
+}
+
+.arrow_box_tv_featured {
+  width: 90px;
+  height: 80px;
+  background-color: #ffd400;
+  position: absolute;
+  top: 80.5%;
+}*/
+
+/*
+
+***********************************************
+
+          Congress
+
+***********************************************
+
 */
+.category {
+  width: 97%;
+  height: 200px;
+  background-color: black;
+  margin: 0 auto;
+  float: right;
+  margin-top: 20px;
+  padding: 0;
+}
+.category_name {
+  width: 40%;
+  height: 30px;
+  padding: 0;
+  background-color: #D62124;
+  color: white;
+  font-weight: 400;
+  font-size: 1.3em;
+  text-align: left;
+  padding-left: 5px;
+  position: relative;
+  right: 3%;
+  bottom: 3%;
+}
+
+
+
+/*
+
+***********************************************
+
+          Larry Hogan
+
+***********************************************
+
+*/
+
+
 
 /*
 
@@ -173,52 +379,65 @@ h1 {
 
 */
 
-.arrow_box_studioc {
+#studioc_arrow {
     position: relative;
     background: #444443;
-    width: 100%;
     height: 200px;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
-.arrow_box_studioc:after, 
-.arrow_box_studioc:before {
+#studioc_arrow:after, 
+#studioc_arrow:before {
     top: 100%;
     border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
     position: absolute;
-    pointer-events: none;
 }
 
-.arrow_box_studioc:after {
-    border-color: rgba(255, 255, 255, 0);
+#studioc_arrow:after {
     border-top-color: #444443;
     border-width: 19px;
-    left: 50%;
-    margin-left: -19px;
 }
-.arrow_box_studioc:before {
-    border-color: rgba(113, 158, 206, 0);
+#studioc_arrow:before {
     border-width: 20px;
-    left: 50%;
-    margin-left: -20px;
 }
 
 #studioc_logo_content {
-  color: #fff;
+  color: white;
   font-weight: 700;
   display: table-cell; 
-  font-size: 30px;
-  text-align: left; 
+  font-size: 3em;
+  text-align: center; 
+  padding: 0;
+
 }
 
+#studiocname span {
+  color: #ffd400;
+  margin: 0;
+}
+
+#studioctagline {
+  display: none;  
+}
+
+/* FOR TABLET+
 #studioc_tagline {
 	color: #fff;
-	font-size: 20px;
+	font-size: 2em;
+  margin-top: 30px;
+  text-align: right;
+  vertical-align: middle;
+}
+*/
+
+#business {
+  background-color: #444443;
 }
 
 /*
+
 
 ***********************************************
 
@@ -230,6 +449,8 @@ h1 {
 
 .navbar {
 	border: 0;
+  margin: 0;
+
 }
 
 
@@ -238,44 +459,11 @@ h1 {
 }
 
 
-
-/* arrow code from stackoverflow.com/questions/16237181/how-to-add-bordered-triangle-over-a-div-tag */
-.arrow_box {
-    position: relative;
-    background: #1e1e1e;
-    width: 100%;
-    height: 200px;
-    padding: 10px;
-}
-.arrow_box:after, 
-.arrow_box:before {
-    bottom: 100%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-}
-
-.arrow_box:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #1e1e1e;
-    border-width: 19px;
-    left: 50%;
-    margin-left: -19px;
-}
-.arrow_box:before {
-    border-color: rgba(113, 158, 206, 0);
-    border-width: 20px;
-    left: 50%;
-    margin-left: -20px;
-}
-
 #footer_highlight {
 	background-color: #ffd500;
 	width: 100%;
 	height: 15px;
+  margin-top: 20px;
 }
 
 #footercontainer *{
@@ -285,7 +473,14 @@ h1 {
 #copyright {
 	text-align: center;
 }
-
+/*
+#merrill_logo {
+  background-image: url(images/merrill.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+}
+*/
 
 /*
 
@@ -297,16 +492,10 @@ h1 {
 
 */
 
-@media (max-width: 759px) { 
+@media (max-width: 767px) { 
   #poweredbybar { 
     display: none; 
    }
-   #main_video {
-   	width: 300px;
-   	height: 200px;
-   	margin:0;
-   	float: clear;
-   } 
 } 
 
 /*
