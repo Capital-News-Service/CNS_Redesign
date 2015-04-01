@@ -11,19 +11,13 @@ body {
 
 COLORS:
 
-	NEAR BLACK: 1e1e1e;
+	NEAR BLACK: 1e1e1e
 
 	LIGHTER BLACK: 444443; (262626)
 
-<<<<<<< HEAD
 	RED: #D62124
 
 	GOLD: ffd500 --> ffd400
-=======
-	RED: c6240a; --> NEW = D62124
-
-	GOLD: ffd500; --> NEW = FFD400
->>>>>>> origin/master
 
 	WHITE
 
@@ -93,7 +87,7 @@ h1 {
 */
 
 #logo {
-  background-color: #ffd400;
+  background-color: #ffd500;
   display: table; 
   position: relative;
   height: 100px;
@@ -226,13 +220,8 @@ h1 {
 
 */
 
-<<<<<<< HEAD
 #cnstv_bar {
   background-color: #ffd500;
-=======
-#cnstv_logo {
-  background-color: #ffd400;
->>>>>>> origin/master
   display: table; 
   width: 100%;
   margin: 20px 0;
@@ -471,7 +460,7 @@ h1 {
 
 
 #footer_highlight {
-	background-color: #ffd400;
+	background-color: #ffd500;
 	width: 100%;
 	height: 15px;
   margin-top: 20px;
