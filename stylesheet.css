@@ -45,7 +45,7 @@ h1 {
     position: relative;
     background: #262626;
     width: 100%;
-    height: 200px;
+    height: 215px;
     padding: 10px;
 }
 .arrow_box:after, 
@@ -262,7 +262,7 @@ h1 {
   line-height: 0.53em;
   position: relative;
   top: 4px;
-  right: 14px;
+  right: 0px;
 }
 #tvsubtext {
   display: none;
@@ -497,8 +497,45 @@ h1 {
   margin-top: 20px;
 }
 
+.merrill_logo {
+  width: 75%;
+}
+
 #footercontainer *{
 	color: white;
+}
+
+#footer_about_tags {
+  margin-bottom: 12px;
+  margin-top: 7px;
+}
+
+#Bottom_PoweredBy {
+  position: relative;
+  top: 2%;
+  left: 5%;
+}
+
+@media (max-width: 767px) {
+  
+  #copyright{
+    text-align: center;
+  }
+
+  #Bottom_PoweredBy {
+    position: relative;
+    top: 2%;
+    margin-top: 10px;
+    margin-bottom: 90px;
+  }
+
+  .arrow_box {
+    position: relative;
+    background: #262626;
+    width: 100%;
+    height: 318px;
+    padding: 10px;
+  }
 }
 
 #copyright {
@@ -520,6 +557,18 @@ h1 {
 
 ***********************************************
 
+        FONT AWESOME
+
+***********************************************
+*/
+
+.fa-white {
+  color: white;
+}
+
+/*
+***********************************************
+
 				MEDIA QUERIES
 
 ***********************************************
@@ -530,7 +579,6 @@ h1 {
   #poweredbybar { 
     display: none;
    }
-} 
 
 /*
 @media (min-width: 760px) { 
