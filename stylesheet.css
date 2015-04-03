@@ -28,34 +28,41 @@ COLORS:
 */
 
 h1 {
-	font-weight: 700;
-	line-height: 1.5;
-	margin-top: 1em;
-	background: #262626;
-	display: inline;
-	color: #fff;
-	padding: 3px;
-	word-wrap: normal;
+	color: white;
 }
 
 h3 {
   font-weight: 700;
 }
 
+h4 {
+  color: black;
+}
+
 .block_header {
-  font-weight: 700;
-  line-height: 1.8;
+  font-weight: 400;
+  line-height: 1.5;
   font-size: 1.3em;
   margin-top: 1em;
-  background: #262626;
+  background: #444443;
   display: inline;
   color: #fff;
-  padding: 3px;
   word-wrap: normal;
 }
 
-/* arrow code from stackoverflow.com/questions/16237181/how-to-add-bordered-triangle-over-a-div-tag */
+.byline {
+    color: white;
+}
 
+
+/* arrow code from stackoverflow.com/questions/16237181/how-to-add-bordered-triangle-over-a-div-tag */
+.arrow_box {
+    position: relative;
+    background: #262626;
+    width: 100%;
+    height: 215px;
+    padding: 10px;
+}
 .arrow_box:after, 
 .arrow_box:before {
     bottom: 100%;
@@ -125,12 +132,12 @@ h3 {
 }
 
 #poweredbybar {
-	width: 44%;
+	width: 42%;
   height: 25px;
   background-color: #dddddd;
   position: relative;
   top: -50px;
-  left: 97px;
+  left: 99px;
   padding-left: 17px;
   z-index: -1;
 }
@@ -188,25 +195,22 @@ h3 {
 #main_slider {
   width: 100%;
   height: 370px;
-  background-color: black;
+  background-image: url("images/hunting.jpg");
+}
+#main_slider h4 {
+  color: #ffd500;
 }
 
-#latest_wrapper {
-  padding-right: 0;
-  padding: 0;
-  margin: 0;
+#slider_text {
+  position: absolute;
+  bottom: 0;
+  padding-left: 10px;
+  background-color:rgba(68, 68, 67, 0.7);
 }
-#latest_header {
-  width: 100%;
-  text-align: center;
-  font-weight: 700;
-  color: white;
-  padding: 0;
-  margin-top: 20px;
-}
+
 #latest_arrow {
     position: relative;
-    background: #d62124;
+    background: #990000;
     width: 100%;
     height: 40px;
     margin: 0;
@@ -219,7 +223,16 @@ h3 {
 }
 #latest_arrow:after {
     border-color: rgba(255, 255, 255, 0);
-    border-top-color: #D62124;
+    border-top-color: #990000;
+}
+
+#latest_header {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  padding: 0;
+  margin-top: 20px;
 }
 
 #latest_body {
@@ -232,7 +245,10 @@ h3 {
 #latest_body p {
   font-weight: 300;
   text-align: left;
-  padding: 3px;
+  padding: 5px;
+}
+#latest_body p:first-child {
+  padding-top: 24px;
 }
 
 #latest_body span {
@@ -267,7 +283,7 @@ h3 {
 #tvname {
   font-size: 5.2em;
   font-weight: 700;
-  line-height: 0.53em;
+  line-height: 0.5em;
   position: relative;
   top: 4px;
   right: 0px;
@@ -281,6 +297,9 @@ h3 {
   background-color: black;
   margin: 0;
 }
+
+
+
 
 /* THIS CODE IS FOR TABLET+
 #cnstv_subtext {
@@ -330,29 +349,7 @@ h3 {
   top: 66.5%;
 }
 
-.arrow_right {
-  width: 50%; 
-  height: 0; 
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent; 
-  border-left:27px solid white; 
-  margin: 5px 10px;
-}
-
-.arrow_right_featured {
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent; 
-  border-left:54px solid white; 
-  margin: 10px 20px;
-}
-
-.arrow_box_tv_featured {
-  width: 90px;
-  height: 80px;
-  background-color: #ffd400;
-  position: absolute;
-  top: 80.5%;
-}*/
+*/
 
 /*
 
@@ -375,7 +372,7 @@ h3 {
 .category_name {
   display: inline-block;
   padding: 5px;
-  background-color: #D62124;
+  background-color: #990000;
   color: white;
   font-weight: 400;
   font-size: 1.3em;
@@ -502,13 +499,6 @@ h3 {
 
 }
 
-.arrow_box {
-    position: relative;
-    background: #262626;
-    width: 100%;
-    height: 265px;
-    padding: 10px;
-}
 
 .row-centered {
 	text-align:center;
@@ -520,26 +510,10 @@ h3 {
 	width: 100%;
 	height: 15px;
   margin-top: 20px;
-  overflow-x:hidden; 
-}
-
-#footer_poweredby_text {
-  margin-bottom: 8px;
-}
-
-#footer_social li {
-  display: inline;
-  list-style-type: none;
-  vertical-align: center;
-}
-
-.bottom_social {
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .merrill_logo {
-  width: 60%;
+  width: 75%;
 }
 
 #footercontainer *{
@@ -547,19 +521,11 @@ h3 {
 }
 
 #footer_about_tags {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   margin-top: 7px;
-  position: relative;
-  right: 1.25%;
 }
 
 #Bottom_PoweredBy {
-  position: relative;
-  top: 2%;
-  left: 20%;
-}
-
-#Bottom_Subscribe {
   position: relative;
   top: 2%;
   left: 5%;
@@ -584,12 +550,6 @@ h3 {
     width: 100%;
     height: 318px;
     padding: 10px;
-  }
-
-  #Bottom_Subscribe {
-  position: relative;
-  top: 2%;
-  left: 5%;
   }
 }
 
