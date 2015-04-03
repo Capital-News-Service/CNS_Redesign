@@ -117,14 +117,20 @@ h1 {
 }
 
 #poweredbybar {
-	width: 50%;
-	height: 25px;
-	background-color: #dddddd;
-	position: relative;
-	top: -50px;
-	left: 100px;
-	padding-left: 5px;
-	z-index: -1;
+	width: 42%;
+  height: 25px;
+  background-color: #dddddd;
+  position: relative;
+  top: -50px;
+  left: 99px;
+  padding-left: 17px;
+  z-index: -1;
+}
+
+#poweredbytext {
+  font-size: 11.5px;
+  position: relative;
+  top: 13%;
 }
 
 .topnavbar {
@@ -246,9 +252,12 @@ h1 {
   vertical-align: middle; 
 }
 #tvname {
-  font-size: 3em;
+  font-size: 5.2em;
   font-weight: 700;
-  line-height: 0.63em;
+  line-height: 0.53em;
+  position: relative;
+  top: 4px;
+  right: 14px;
 }
 #tvsubtext {
   display: none;
@@ -359,9 +368,9 @@ h1 {
   font-weight: 400;
   font-size: 1.3em;
   text-align: left;
-  padding-left: 5px;
+  padding-left: 12px;
   position: relative;
-  right: 3%;
+  right: 1.7%;
   bottom: 3%;
 }
 
@@ -402,10 +411,13 @@ h1 {
 #studioc_logo_content {
   color: white;
   font-weight: 700;
-  display: table-cell; 
+  display: table-cell;
   font-size: 3em;
-  text-align: center; 
+  text-align: left;
+  position: relative;
   padding: 0;
+  left: 3%;
+  top: 3%;
 
 }
 
@@ -468,6 +480,9 @@ h1 {
 
 #copyright {
 	text-align: center;
+  font-size: 11px;
+  position: relative;
+  top: 3em;
 }
 /*
 #merrill_logo {
@@ -490,7 +505,7 @@ h1 {
 
 @media (max-width: 767px) { 
   #poweredbybar { 
-    display: none; 
+    display: none;
    }
 } 
 
