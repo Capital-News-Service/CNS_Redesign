@@ -46,7 +46,8 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
         CCCCCCCCCCCCCNNNNNNNN         NNNNNNN SSSSSSSSSSSSSSS            
 
 
-        (╯°□°)╯︵ ┻━┻ 
+			
+        (╯°□°)╯︵ ┻━┻     "THE DINOSAURS ARE COMING! RUN!"
 
 -->
 
@@ -75,7 +76,7 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="trending_nav nav navbar-nav navbar-right">
                 		<div class="col-sm-3 col-md-3 pull-right">
 							<form class="navbar-form" role="search">
 							<div class="input-group">
@@ -92,28 +93,19 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#environment">TRENDING:</a>
+                        <a class="page-scroll trend_links" href="#environment">TRENDING:</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#environment">#Environment</a>
+                        <a class="page-scroll trend_links" href="#environment">#Environment</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#politics">#Politics</a>
+                        <a class="page-scroll trend_links" href="#politics">#Politics</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#local">#Local</a>
+                        <a class="page-scroll trend_links" href="#local">#Local</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#sports">#Sports</a>
-                    </li>
-                    <li>
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a href="#page-top"></a>
+                        <a class="page-scroll trend_links" href="#sports">#Sports</a>
                     </li>
                     <li>
                         <a href="#page-top"></a>
@@ -135,7 +127,7 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
         <!-- /.container-fluid -->
     </nav>
 	<div id="poweredbybar">
-		<p id="poweredbytext">Powered by the Philip Merrill College of Journalism</p></div>
+		<p id="poweredbytext">Powered by the <a href="http://www.merrill.umd.edu/" target="_blank">Philip Merrill College of Journalism</a></p></div>
 
 <!--MAIN SLIDER AND LATEST NEWS-->
 	<div class="row"> 
@@ -335,17 +327,20 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
 					<div class="col-xs-12"><a href="http://www.merrill.umd.edu/" target="_blank"><img class ="img-responsive merrill_logo" src="images/merrill.png"></a></div>
 				</div>
 				<div class="col-sm-6" id="Bottom_Subscribe">
-					<div class="col-xs-12">Subscribe: </div>
-					<div class="col-xs-12">[form will go here]</div>
+					<div id="footer_subscribe_text" class="col-xs-12">Subscribe: </div>
+					<div class="form-group form-group-edit">
+                                    <input type="email" class="email_form_size form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                    </div>
 				</div>
 		</div>
 
 			<div class="row">
 				<div class="col-xs-12" id="copyright">
 					<ul id="footer_social">
-						<li><a href="" target="_blank"><i class="bottom_social fa fa-twitter fa-2x"></i></a></li> 
-						<li><a href="" target="_blank"><i class="bottom_social fa fa-facebook fa-2x"></i></a></li>
-						<li><a href="" target="_blank"><i class="bottom_social fa fa-instagram fa-2x"></i></a></li>
+						<li><a href="" target="_blank"><i id="bottom_social_Twitter" class="bottom_social fa fa-twitter fa-2x"></i></a></li> 
+						<li><a href="" target="_blank"><i id="bottom_social_Facebook" class="bottom_social fa fa-facebook fa-2x"></i></a></li>
+						<li><a href="" target="_blank"><i id="bottom_social_Instagram" class="bottom_social fa fa-instagram fa-2x"></i></a></li>
 					</ul>
 					<hr>
 					<p>&copy; 2015 Capital News Service. All rights reserved.</p>
