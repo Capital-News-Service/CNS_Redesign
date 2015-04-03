@@ -1,5 +1,6 @@
 body {
 	font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden; 
 }
 
 h1 {
@@ -567,7 +568,7 @@ h4 {
 }
 
 .email_form_size {
-    width: 70%;
+    width: 50%;
 }
 
 #footercontainer *{
@@ -585,7 +586,12 @@ h4 {
 #Bottom_PoweredBy {
   position: relative;
   top: 2%;
-  left: 9%;
+  left: 21%;
+}
+
+#Bottom_Subscribe {
+  position: relative;
+  left: 5%;
 }
 
 @media (max-width: 767px) {
