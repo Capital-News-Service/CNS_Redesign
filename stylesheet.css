@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Lovelo';
+  src: url('fonts/lovelo/Lovelo_Black.otf'); /* IE9 Compat Modes */
+  src: url('fonts/lovelo/Lovelo_Black.otf') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/lovelo/Lovelo_Black.otf') format('woff2'), /* Super Modern Browsers */
+       url('fonts/lovelo/Lovelo_Black.otf') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/lovelo/Lovelo_Black.otf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/lovelo/Lovelo_Black.otf') format('svg'); /* Legacy iOS */
+}
+
 body {
 	font-family: 'Source Sans Pro', sans-serif;
   overflow-x: hidden; 
