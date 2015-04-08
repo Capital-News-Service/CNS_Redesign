@@ -85,12 +85,36 @@ h3 {
 */
 
 #logo {
+<<<<<<< HEAD
   color: #ffd500;
   font-size: 2em;
   margin: 10px;
   text-align: left; 
   vertical-align: middle; 
   font-family: 'Lovelo';
+=======
+	width: 100px;
+	height: 100px;
+	background-color: #ffd500;
+	z-index: 1;
+}
+*/
+
+.just_trending {
+  margin-right: 1px;
+}
+
+#logo {
+  background-color: #ffd500;
+  display: table; 
+  position: relative;
+  height: 100px;
+  margin-left: 25px;
+  overflow: hidden;
+  padding: 0 10px;
+  width: 100px;
+  z-index: 11;
+>>>>>>> origin/master
 }
 
 .trending_nav {
@@ -104,7 +128,7 @@ h3 {
 #poweredbybar {
 	width: 44.5%;
   height: 25px;
-  background-color: #444443;
+  background-color: #404040;
   position: relative;
   top: -50px;
   left: 99px;
@@ -539,6 +563,11 @@ h3 {
 #footer_about {
   margin-bottom: 12px;
   margin-top: 7px;
+<<<<<<< HEAD
+=======
+  position: inherit;
+  margin-right: .06%;
+>>>>>>> origin/master
   text-align: center;
 }
 
