@@ -13,16 +13,16 @@ body {
   overflow-x: hidden; 
 }
 
-h1 {
-	color: white;
+#main {
+  margin-top: 125px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #1e1e1e;
 }
 
 h3 {
   font-weight: 700;
-}
-	
-h4 {
-  color: black;
 }
 
 .block_header {
@@ -47,7 +47,6 @@ h4 {
     position: relative;
     background: #262626;
     width: 100%;
-    height: 285px;
     padding: 10px;
 }
 .arrow_box:after, 
@@ -85,25 +84,13 @@ h4 {
 
 */
 
-/*
 #logo {
-	width: 100px;
-	height: 100px;
-	background-color: #ffd500;
-	z-index: 1;
-}
-*/
-
-#logo {
-  background-color: #ffd500;
-  display: table; 
-  position: relative;
-  height: 100px;
-  margin-left: 25px;
-  overflow: hidden;
-  padding: 0 10px;
-  width: 100px;
-  z-index: 11;
+  color: #ffd500;
+  font-size: 2em;
+  margin: 10px;
+  text-align: left; 
+  vertical-align: middle; 
+  font-family: 'Lovelo';
 }
 
 .trending_nav {
@@ -111,22 +98,7 @@ h4 {
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-
   color: #ffd500;
-
-}
-
-#logo:first-child {
-  margin-left: 0;
-}
-#logo_content {
-  color: #fff;
-  display: table-cell; 
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center; 
-  vertical-align: middle; 
 }
 
 #poweredbybar {
@@ -208,6 +180,9 @@ h4 {
   padding-left: 10px;
   background-color:rgba(68, 68, 67, 0.7);
 }
+#slider_text h1 {
+  color: white;
+}
 
 #latest_arrow {
     position: relative;
@@ -230,19 +205,22 @@ h4 {
 
 #latest_header {
   width: 100%;
-  color: white;
+  color: #1e1e1e;
   padding: 0;
   margin-top: 20px;
 }
 
+#latest_header span {
+  color: white;
+}
+
 #latest_body {
   width: 100%;
-  background-color: #444443;
-  height: 450px;
   padding-left: 5px;
   padding-right: 5px;
   margin: 0 auto;
   font-size: 1.2em;
+  border: 1px solid #1e1e1e;
 }
 #latest_body p:first-child {
   padding-top: 24px;
@@ -354,6 +332,8 @@ h4 {
 ***********************************************
 
 */
+
+
 .category {
   width: 97%;
   height: 200px;
@@ -365,7 +345,7 @@ h4 {
 }
 .category_name {
   display: inline-block;
-  padding: 5px;
+  padding: 3px 10px 3px 10px;
   background-color: #990000;
   color: white;
   font-weight: 400;
@@ -497,44 +477,28 @@ h4 {
 
 */
 
-.navbar {
-	border: 0;
-  margin: 0;
-
+#footer *{
+  color: white;
 }
 
-<<<<<<< Updated upstream
-=======
+#footer_highlight {
+  background-color: #ffd500;
+  width: 100%;
+  height: 12px;
+  margin-top: 28px;
+  overflow-x:hidden; 
+}
+
 .arrow_box {
     position: relative;
     background: #262626;
     width: 100%;
     height: 275px;
-    padding: 10px;
-}
->>>>>>> Stashed changes
-
-.row-centered {
-	text-align:center;
 }
 
-
-#footer_highlight {
-	background-color: #ffd500;
-	width: 100%;
-	height: 15px;
-  margin-top: 20px;
-<<<<<<< Updated upstream
-=======
-  overflow-x:hidden; 
-}
-
-#footer_poweredby_text {
-  margin-bottom: 8px;
-}
-
-#footer_subscribe_text {
-  margin-bottom: 8px;
+.navbar {
+	border: 0;
+  margin: 0;
 }
 
 .form-group-edit {
@@ -552,25 +516,16 @@ h4 {
 .bottom_social {
   margin-left: 10px;
   margin-right: 10px;
->>>>>>> Stashed changes
 }
 
 #bottom_social_Facebook:hover {
-
   color:#3b5998;
-
 }
-
 #bottom_social_Instagram:hover {
-  
   color:#3f729b;
-
 }
-
 #bottom_social_Twitter:hover {
- 
   color:#55acee;
-
 }
 
 .merrill_logo {
@@ -581,15 +536,9 @@ h4 {
     width: 50%;
 }
 
-#footercontainer *{
-	color: white;
-}
-
-#footer_about_tags {
+#footer_about {
   margin-bottom: 12px;
   margin-top: 7px;
-  position: inherit;
-  margin-right: 14px;
   text-align: center;
 }
 
@@ -605,44 +554,25 @@ h4 {
 }
 
 @media (max-width: 767px) {
-  
-  #copyright{
-    text-align: center;
-  }
-
-  #Bottom_PoweredBy {
-    position: relative;
-    top: 2%;
-    margin-top: 10px;
-    margin-bottom: 90px;
-  }
 
   .arrow_box {
     position: relative;
     background: #262626;
     width: 100%;
-    height: 348px;
+    height: 320px;
     padding: 10px;
-  }
-
-  #Bottom_Subscribe {
-    position: relative;
-    top: 2%;
-    left: 9%;
   }
 
   #footer_social {
     position: relative;
     right: 5%;
   }
->>>>>>> Stashed changes
 }
 
 #copyright {
 	text-align: center;
-  font-size: 11px;
+  font-size: 0.9em;
   position: relative;
-  top: 3em;
 }
 
 /*
@@ -655,10 +585,9 @@ h4 {
 */
 
 /*
-
 ***********************************************
 
-        FONT AWESOME
+        SOCIAL MEDIA BUTTONS
 
 ***********************************************
 */
@@ -666,6 +595,41 @@ h4 {
 .fa-white {
   color: white;
 }
+
+.btn {
+  color: white;
+}
+.btn a, .btn a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#btn-fb {
+  background-color: #3a5795;
+}
+#btn-twi {
+  background-color: #55acee;
+}
+#btn-ins {
+  background-color: #49779d;
+}
+
+/*
+
+***********************************************
+
+          ARTICLE ASSETS
+
+***********************************************
+
+*/
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /*
 ***********************************************
@@ -681,7 +645,7 @@ h4 {
     display: none;
    }
 
-/*
+/* 
 @media (min-width: 760px) { 
   #poweredbybar { 
     display: block; 
