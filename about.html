@@ -75,16 +75,10 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="trending_nav nav navbar-nav navbar-right">
                 		<div class="col-sm-3 col-md-3 pull-right">
-							<form class="navbar-form" role="search">
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-								<div class="input-group-btn">
-									<button class="btn btn-default" type="submit">
-										<i class="fa fa-search fa-lg"></i>
-									</button>
-								</div>
-							</div>
-							</form>
+							<form action="/search.html" class="search-wrapper cf">
+        						<input type="text" placeholder="Search here..." required="">
+        						<button type="submit">Search</button>
+    						</form>
 						</div>
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -163,9 +157,10 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
 			</div> 
 			<div class="col-sm-6">
 				<div class="col-xs-12">Subscribe:</div>
-				<div class="form-group form-group-edit">
-	                <input type="email" class="email_form_size form-control" placeholder="Your Email:" id="email" required data-validation-required-message="Please enter your email address.">
-	            </div>
+					<form action="/search.html" class="search-wrapper cf">
+						<input type="text" placeholder="Your email address..." required="">
+						<button type="submit">Submit</button>
+					</form>
 			</div>
 
 			<div class="col-xs-12" id="copyright">

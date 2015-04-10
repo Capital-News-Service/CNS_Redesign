@@ -21,8 +21,12 @@ h1, h2, h3, h4, h5, h6 {
 	color: #1e1e1e;
 }
 
-h3 {
+h2 {
   font-weight: 700;
+}
+
+h3 {
+  font-weight: 400;
 }
 
 .block_header {
@@ -85,36 +89,17 @@ h3 {
 */
 
 #logo {
-<<<<<<< HEAD
   color: #ffd500;
   font-size: 2em;
   margin: 10px;
   text-align: left; 
-  vertical-align: middle; 
   font-family: 'Lovelo';
-=======
-	width: 100px;
-	height: 100px;
-	background-color: #ffd500;
 	z-index: 1;
 }
 */
 
 .just_trending {
   margin-right: 1px;
-}
-
-#logo {
-  background-color: #ffd500;
-  display: table; 
-  position: relative;
-  height: 100px;
-  margin-left: 25px;
-  overflow: hidden;
-  padding: 0 10px;
-  width: 100px;
-  z-index: 11;
->>>>>>> origin/master
 }
 
 .trending_nav {
@@ -168,6 +153,124 @@ h3 {
 	display: none !important;
 } This makes the navbar always collapsed*/
 
+/*
+
+***********************************************
+
+          SUBMIT BUTTON
+  (http://codepen.io/siwicki/pen/FHkwu)
+
+***********************************************
+
+*/
+
+.cf:before, .cf:after{
+    content:"";
+    display: table;
+}
+ 
+ /*
+.cf:after{
+    clear:both;
+}
+ 
+.cf{
+    zoom:1;
+}    
+*/
+
+ /* Form wrapper styling */
+.search-wrapper {
+width: 220px;
+margin: 10px 175px 20px 10px;
+}
+ 
+/* Form text input */
+ 
+.search-wrapper input {
+width: 148px;
+height: 30px;
+padding: 10px 5px;
+float: left;
+font: 10px;
+border: 0;
+background: white;
+border-radius: 3px 0 0 3px;
+}
+ 
+.search-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
+}
+ 
+.search-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+ 
+.search-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+.search-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+ 
+/* Form submit button */
+.search-wrapper button {
+overflow: visible;
+position: relative;
+float: right;
+border: 0;
+padding: 0;
+height: 30px;
+width: 72px;
+color: white;
+text-transform: uppercase;
+background: #ffd500;
+border-radius: 0 3px 3px 0;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+   
+.search-wrapper button:hover{     
+    background: #990000;
+}   
+   
+.search-wrapper button:active,
+.search-wrapper button:focus{   
+    background: #5E0000;
+    outline: 0;   
+}
+ 
+.search-wrapper button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #ffd500 transparent;
+    top: 8px;
+    left: -6px;
+}
+ 
+.search-wrapper button:hover:before{
+    border-right-color: #990000;
+}
+ 
+.search-wrapper button:focus:before,
+.search-wrapper button:active:before{
+        border-right-color: #5E0000;
+}      
+ 
+.search-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}
 
 /*
 
@@ -509,7 +612,7 @@ h3 {
   background-color: #ffd500;
   width: 100%;
   height: 12px;
-  margin-top: 28px;
+  margin-top: 38px;
   overflow-x:hidden; 
 }
 
@@ -563,11 +666,8 @@ h3 {
 #footer_about {
   margin-bottom: 12px;
   margin-top: 7px;
-<<<<<<< HEAD
-=======
   position: inherit;
   margin-right: .06%;
->>>>>>> origin/master
   text-align: center;
 }
 
