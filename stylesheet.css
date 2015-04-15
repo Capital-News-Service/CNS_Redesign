@@ -13,10 +13,6 @@ body {
   overflow-x: hidden; 
 }
 
-#main {
-  margin-top: 125px;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	color: #1e1e1e;
 }
@@ -378,37 +374,43 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
 
 */
 
-#cnstv_bar {
+#cnstv_header {
   background-color: #ffd500;
-  display: table; 
-  width: 100%;
-  margin: 20px 0;
-}
-#cnstv_bar:first-child {
-  margin-left: 0;
+  height: 38px;
 }
 #cnstv_text {
   color: #fff;
-  display: table-cell; 
   text-align: left; 
   vertical-align: middle; 
-}
-#tvname {
-  font-size: 5.2em;
+  font-size: 4.2em;
   font-weight: 700;
   line-height: 0.5em;
   position: relative;
   top: 4px;
   right: 0px;
 }
-#tvsubtext {
-  display: none;
+#cnstv_subtext { 
+  color: #fff;
+  font-size: 2em;
+  float: right;
 }
-#cnstv_body {
+@media (max-width: 1280px) { 
+  #cnstv_subtext { 
+    display: none;
+  }
+}
+#cnstv_content {
+  height: 300px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+#cnstv-tease {
+  background-color: #ccc;
   width: 100%;
   height: 150px;
-  background-color: black;
-  margin: 0;
+  margin-bottom: 25px;
+  margin-top: 10px;
 }
 
 
@@ -754,6 +756,17 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
 #btn-ins {
   background-color: #49779d;
 }
+#btn-plus {
+  background-color: #1e1e1e;
+}
+
+#extra-social {
+  display: none;
+}
+
+#share {
+  margin-bottom: 15px;
+}
 
 /*
 
@@ -771,6 +784,43 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
   margin-right: auto;
 }
 
+.red-hr {
+  background-color: #990000;
+  height: 5px;
+  margin-top: 0;
+}
+
+#related-tease {
+  background-color: #ccc;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+/*
+
+***********************************************
+
+                  ADS
+
+***********************************************
+
+*/
+
+.ad {
+  background-color: #eee;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 25px;
+}
+
+.ad2 {
+  background-color: #eee;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 25px;
+}
 
 /*
 ***********************************************
