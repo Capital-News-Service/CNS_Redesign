@@ -798,6 +798,20 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
   margin-top: 10px;
 }
 
+.author-bio {
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 0.9em;
+}
+.author-bio-pic {
+  background: purple;
+  border-radius: 50%;
+  width:75px;
+  height: 75px;
+  padding: 10px;
+  font-size: 50px;
+}
+
 /*
 
 ***********************************************
