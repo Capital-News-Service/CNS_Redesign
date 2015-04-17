@@ -83,7 +83,84 @@ h4 {
 
 ***********************************************
 
+/*New Menu by Teddy
 */
+
+#social_nav 
+{
+  position: fixed;
+  right: 0px;
+}
+
+#twitter_nav 
+{
+  background-color: #55acee;
+  padding: 15.3px;
+  padding-bottom: 18px;
+  display: inline;
+  position: relative;
+  top: 14px;
+  right: -3px;
+}
+#facebook_nav 
+{
+  background-color: #3b5998;
+  padding: 18.3px;
+  display: inline;
+  position: relative;
+  top: 14px;
+  right: -3px;
+}
+
+#twitter_bird_nav 
+{
+  color:white;
+}
+
+#text-right 
+{
+  text-align: right;
+  display: inline;
+}
+
+#top_nav 
+{
+  background-color: #333;
+}
+
+#second_nav 
+{
+  background-color: #404040;
+  height: 35px;
+}
+
+#top_nav_CNS
+{
+  margin-left: 17%;
+  width: 100%;
+  font-size: 32px;
+  font-family: 'Lovelo';
+  padding-top: 20px;
+  color: #333;
+  background-color:  yellow;
+}
+
+#top_nav_Trending
+{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 100%;
+  color: white;
+  position: relative;
+  bottom: 7px;
+}
+
+#Top_navbar_Poweredby_Merrill
+{
+  color: white;
+  width: 540px;
+
+}
 
 /*
 #logo {
