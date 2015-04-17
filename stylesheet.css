@@ -13,19 +13,19 @@ body {
   overflow-x: hidden; 
 }
 
-h1 {
-	color: white;
+h1, h2, h3, h4, h5, h6 {
+	color: #1e1e1e;
+}
+
+h2 {
+  font-weight: 700;
 }
 
 h3 {
-  font-weight: 700;
-}
-	
-h4 {
-  color: black;
+  font-weight: 400;
 }
 
-.block_header {
+.block-header {
   font-weight: 400;
   line-height: 1.5;
   font-size: 1.3em;
@@ -35,10 +35,22 @@ h4 {
   color: #fff;
   word-wrap: normal;
 }
+.tags {
+  font-weight: 400;
+  background: #ffd500;
+  display: inline;
+  color: #fff;
+  word-wrap: normal;
+  padding: 3px 10px 3px 10px;
+}
 
 .byline {
     color: white;
     font-size: 0.7em;
+}
+
+.img-responsive {
+  margin-bottom: 20px;
 }
 
 
@@ -47,7 +59,6 @@ h4 {
     position: relative;
     background: #262626;
     width: 100%;
-    height: 285px;
     padding: 10px;
 }
 .arrow_box:after, 
@@ -86,6 +97,7 @@ h4 {
 /*New Menu by Teddy
 */
 
+<<<<<<< HEAD
 #social_nav 
 {
   position: fixed;
@@ -163,10 +175,14 @@ h4 {
 }
 
 /*
+=======
+>>>>>>> origin/master
 #logo {
-	width: 100px;
-	height: 100px;
-	background-color: #ffd500;
+  color: #ffd500;
+  font-size: 2em;
+  margin: 10px;
+  text-align: left; 
+  font-family: 'Lovelo';
 	z-index: 1;
 }
 */
@@ -175,39 +191,12 @@ h4 {
   margin-right: 1px;
 }
 
-#logo {
-  background-color: #ffd500;
-  display: table; 
-  position: relative;
-  height: 100px;
-  margin-left: 25px;
-  overflow: hidden;
-  padding: 0 10px;
-  width: 100px;
-  z-index: 11;
-}
-
 .trending_nav {
   margin-right: 38px;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-
   color: #ffd500;
-
-}
-
-#logo:first-child {
-  margin-left: 0;
-}
-#logo_content {
-  color: #fff;
-  display: table-cell; 
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center; 
-  vertical-align: middle; 
 }
 
 #poweredbybar {
@@ -253,6 +242,124 @@ h4 {
 	display: none !important;
 } This makes the navbar always collapsed*/
 
+/*
+
+***********************************************
+
+          SUBMIT BUTTON
+  (http://codepen.io/siwicki/pen/FHkwu)
+
+***********************************************
+
+*/
+
+.cf:before, .cf:after{
+    content:"";
+    display: table;
+}
+ 
+ /*
+.cf:after{
+    clear:both;
+}
+ 
+.cf{
+    zoom:1;
+}    
+*/
+
+ /* Form wrapper styling */
+.search-wrapper {
+width: 220px;
+margin: 10px 175px 20px 10px;
+}
+ 
+/* Form text input */
+ 
+.search-wrapper input {
+width: 148px;
+height: 30px;
+padding: 10px 5px;
+float: left;
+font: 10px;
+border: 0;
+background: white;
+border-radius: 3px 0 0 3px;
+}
+ 
+.search-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
+}
+ 
+.search-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+ 
+.search-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+.search-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+ 
+/* Form submit button */
+.search-wrapper button {
+overflow: visible;
+position: relative;
+float: right;
+border: 0;
+padding: 0;
+height: 30px;
+width: 72px;
+color: white;
+text-transform: uppercase;
+background: #ffd500;
+border-radius: 0 3px 3px 0;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+   
+.search-wrapper button:hover{     
+    background: #990000;
+}   
+   
+.search-wrapper button:active,
+.search-wrapper button:focus{   
+    background: #5E0000;
+    outline: 0;   
+}
+ 
+.search-wrapper button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #ffd500 transparent;
+    top: 8px;
+    left: -6px;
+}
+ 
+.search-wrapper button:hover:before{
+    border-right-color: #990000;
+}
+ 
+.search-wrapper button:focus:before,
+.search-wrapper button:active:before{
+        border-right-color: #5E0000;
+}      
+ 
+.search-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}
 
 /*
 
@@ -289,6 +396,9 @@ h4 {
   padding-left: 10px;
   background-color:rgba(68, 68, 67, 0.7);
 }
+#slider_text h1 {
+  color: white;
+}
 
 #latest_arrow {
     position: relative;
@@ -311,19 +421,22 @@ h4 {
 
 #latest_header {
   width: 100%;
-  color: white;
+  color: #1e1e1e;
   padding: 0;
   margin-top: 20px;
 }
 
+#latest_header span {
+  color: white;
+}
+
 #latest_body {
   width: 100%;
-  background-color: #444443;
-  height: 450px;
   padding-left: 5px;
   padding-right: 5px;
   margin: 0 auto;
   font-size: 1.2em;
+  border: 1px solid #1e1e1e;
 }
 #latest_body p:first-child {
   padding-top: 24px;
@@ -342,37 +455,43 @@ h4 {
 
 */
 
-#cnstv_bar {
+#cnstv_header {
   background-color: #ffd500;
-  display: table; 
-  width: 100%;
-  margin: 20px 0;
-}
-#cnstv_bar:first-child {
-  margin-left: 0;
+  height: 38px;
 }
 #cnstv_text {
   color: #fff;
-  display: table-cell; 
   text-align: left; 
   vertical-align: middle; 
-}
-#tvname {
-  font-size: 5.2em;
+  font-size: 4.2em;
   font-weight: 700;
   line-height: 0.5em;
   position: relative;
   top: 4px;
   right: 0px;
 }
-#tvsubtext {
-  display: none;
+#cnstv_subtext { 
+  color: #fff;
+  font-size: 2em;
+  float: right;
 }
-#cnstv_body {
+@media (max-width: 1280px) { 
+  #cnstv_subtext { 
+    display: none;
+  }
+}
+#cnstv_content {
+  height: 300px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+#cnstv-tease {
+  background-color: #ccc;
   width: 100%;
   height: 150px;
-  background-color: black;
-  margin: 0;
+  margin-bottom: 25px;
+  margin-top: 10px;
 }
 
 
@@ -435,6 +554,8 @@ h4 {
 ***********************************************
 
 */
+
+
 .category {
   width: 97%;
   height: 200px;
@@ -446,7 +567,7 @@ h4 {
 }
 .category_name {
   display: inline-block;
-  padding: 5px;
+  padding: 3px 10px 3px 10px;
   background-color: #990000;
   color: white;
   font-weight: 400;
@@ -578,44 +699,28 @@ h4 {
 
 */
 
-.navbar {
-	border: 0;
-  margin: 0;
-
+#footer *{
+  color: white;
 }
 
-<<<<<<< Updated upstream
-=======
+#footer_highlight {
+  background-color: #ffd500;
+  width: 100%;
+  height: 12px;
+  margin-top: 38px;
+  overflow-x:hidden; 
+}
+
 .arrow_box {
     position: relative;
     background: #262626;
     width: 100%;
     height: 275px;
-    padding: 10px;
-}
->>>>>>> Stashed changes
-
-.row-centered {
-	text-align:center;
 }
 
-
-#footer_highlight {
-	background-color: #ffd500;
-	width: 100%;
-	height: 15px;
-  margin-top: 20px;
-<<<<<<< Updated upstream
-=======
-  overflow-x:hidden; 
-}
-
-#footer_poweredby_text {
-  margin-bottom: 8px;
-}
-
-#footer_subscribe_text {
-  margin-bottom: 8px;
+.navbar {
+	border: 0;
+  margin: 0;
 }
 
 .form-group-edit {
@@ -633,25 +738,16 @@ h4 {
 .bottom_social {
   margin-left: 10px;
   margin-right: 10px;
->>>>>>> Stashed changes
 }
 
 #bottom_social_Facebook:hover {
-
   color:#3b5998;
-
 }
-
 #bottom_social_Instagram:hover {
-  
   color:#3f729b;
-
 }
-
 #bottom_social_Twitter:hover {
- 
   color:#55acee;
-
 }
 
 .merrill_logo {
@@ -662,11 +758,7 @@ h4 {
     width: 50%;
 }
 
-#footercontainer *{
-	color: white;
-}
-
-#footer_about_tags {
+#footer_about {
   margin-bottom: 12px;
   margin-top: 7px;
   position: inherit;
@@ -686,44 +778,25 @@ h4 {
 }
 
 @media (max-width: 767px) {
-  
-  #copyright{
-    text-align: center;
-  }
-
-  #Bottom_PoweredBy {
-    position: relative;
-    top: 2%;
-    margin-top: 10px;
-    margin-bottom: 90px;
-  }
 
   .arrow_box {
     position: relative;
     background: #262626;
     width: 100%;
-    height: 348px;
+    height: 320px;
     padding: 10px;
-  }
-
-  #Bottom_Subscribe {
-    position: relative;
-    top: 2%;
-    left: 9%;
   }
 
   #footer_social {
     position: relative;
     right: 5%;
   }
->>>>>>> Stashed changes
 }
 
 #copyright {
 	text-align: center;
-  font-size: 11px;
+  font-size: 0.9em;
   position: relative;
-  top: 3em;
 }
 
 /*
@@ -736,16 +809,112 @@ h4 {
 */
 
 /*
-
 ***********************************************
 
-        FONT AWESOME
+        SOCIAL MEDIA BUTTONS
 
 ***********************************************
 */
 
 .fa-white {
   color: white;
+}
+
+.btn {
+  color: white;
+}
+.btn a, .btn a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#btn-fb {
+  background-color: #3a5795;
+}
+#btn-twi {
+  background-color: #55acee;
+}
+#btn-ins {
+  background-color: #49779d;
+}
+#btn-plus {
+  background-color: #1e1e1e;
+}
+
+#extra-social {
+  display: none;
+}
+
+#share {
+  margin-bottom: 15px;
+}
+
+/*
+
+***********************************************
+
+          ARTICLE ASSETS
+
+***********************************************
+
+*/
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.red-hr {
+  background-color: #990000;
+  height: 5px;
+  margin-top: 0;
+}
+
+#related-tease {
+  background-color: #ccc;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.author-bio {
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 0.9em;
+}
+.author-bio-pic {
+  background: purple;
+  border-radius: 50%;
+  width:75px;
+  height: 75px;
+  padding: 10px;
+  font-size: 50px;
+}
+
+/*
+
+***********************************************
+
+                  ADS
+
+***********************************************
+
+*/
+
+.ad {
+  background-color: #eee;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 25px;
+}
+
+.ad2 {
+  background-color: #eee;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 25px;
 }
 
 /*
@@ -762,7 +931,7 @@ h4 {
     display: none;
    }
 
-/*
+/* 
 @media (min-width: 760px) { 
   #poweredbybar { 
     display: block; 
