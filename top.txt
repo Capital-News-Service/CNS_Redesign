@@ -1,0 +1,25 @@
+<div id="top_nav" class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" id="top_nav_CNS" href="#">Capital News Service</a>
+    </div>
+    <!--<ul style="display:block; list-style-type:none">
+      <li id="Top_navbar_Poweredby_Merrill">Powered by the Philip Merrill College of Journalism</li>
+    </ul>
+    <ul style="display:block; list-style-type:none">
+      <li>Twitter</li>
+      <li>Facebook</li>
+    </ul>-->
+    <div id="social_nav">
+      <div id="twitter_nav">
+        <a class="text-right" href="https://twitter.com/cnsmd">
+          <i id="twitter_bird_nav" class="fa fa-twitter fa-lg"></i>
+        </a>
+      </div>
+      <div id="facebook_nav">
+        <a class="text-right" href="https://www.facebook.com/MarylandCNS">
+          <i id="twitter_bird_nav" class="fa fa-facebook fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div><!-- /.container-fluid -->

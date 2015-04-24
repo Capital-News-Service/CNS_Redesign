@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	
+    <!-- Custom styles for this template -->
+    <link href="search.css" rel="stylesheet">
+
+
+    <title>Capital News Service</title>
+	
+	
+</head>
+
+<body>
+	<div class="search-wrap" js-ui-search>
+	<input type="text" / js-ui-text>
+	<span class="eks" js-ui-close></span>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script>
+	$(document).on('ready', function(){
+	
+	var $wrap = $('[js-ui-search]');
+	var $close = $('[js-ui-close]');
+	var $input = $('[js-ui-text]');
+	
+	$close.on('click', function(){
+		$wrap.toggleClass('open');
+	});
+	
+	$input.on('transitionend webkitTransitionEnd oTransitionEnd', function(){
+		console.log('triggered end animation');
+		if ($wrap.hasClass('open')) {
+			$input.focus();
+		} else {
+			return;
+		}
+	});
+});
+</script>
+</body>
+</html>

@@ -97,36 +97,77 @@ h3 {
 /*New Menu by Teddy
 */
 
-<<<<<<< HEAD
+#trending_list li 
+{
+  display: inline;
+  padding: 8px;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.white_link 
+{
+  color:white;
+}
+
+
 #social_nav 
 {
   position: fixed;
-  right: 0px;
+  right: 16px;
 }
 
 #twitter_nav 
 {
   background-color: #55acee;
   padding: 15.3px;
-  padding-bottom: 18px;
+  padding-bottom: 9px;
   display: inline;
-  position: relative;
-  top: 14px;
-  right: -3px;
+  position: fixed;
+  top: -2px;
+  right: 47px;
 }
+
+#search_nav 
+{
+  background-color: #7e7e7e;
+  padding: 0px;
+  display: inline;
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  padding-right: 0px;
+}
+
 #facebook_nav 
 {
   background-color: #3b5998;
   padding: 18.3px;
   display: inline;
-  position: relative;
-  top: 14px;
-  right: -3px;
+  position: fixed;
+  top: -6px;
+  right: 0px;
 }
 
 #twitter_bird_nav 
 {
   color:white;
+  position: relative;
+  top: 0px;
+}
+
+#search_glass_nav
+{
+  color:white;
+}
+
+#facebook_f_nav
+{
+  color: white;
+  position: relative;
+  top: 0px;
 }
 
 #text-right 
@@ -140,9 +181,17 @@ h3 {
   background-color: #333;
 }
 
-#second_nav 
+#trending_nav 
 {
-  background-color: #404040;
+  color:white;
+  position: relative;
+  bottom: -7px;
+  left: 24px;
+}
+
+.second_nav 
+{
+  background-color: #696969;
   height: 35px;
 }
 
@@ -154,7 +203,7 @@ h3 {
   font-family: 'Lovelo';
   padding-top: 20px;
   color: #333;
-  background-color:  yellow;
+  background-color:  #ffd500;
 }
 
 #top_nav_Trending
@@ -170,8 +219,22 @@ h3 {
 #Top_navbar_Poweredby_Merrill
 {
   color: white;
-  width: 540px;
+  font-size: 10px;
+  position: relative;
+  top: 30px;
+  left: 6%;
 
+}
+
+#trending_list li
+{
+  display:inline;
+  padding: 8px;
+  list-style-type:none;
+  margin:0;
+  padding: 8px;
+  position: relative;
+  top: 2px;
 }
 
 /*
@@ -284,7 +347,7 @@ float: left;
 font: 10px;
 border: 0;
 background: white;
-border-radius: 3px 0 0 3px;
+border-radius: 0px;
 }
  
 .search-wrapper input:focus {
@@ -1005,3 +1068,11 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
     } 
 }
 */
+
+
+
+
+
+
+
+
