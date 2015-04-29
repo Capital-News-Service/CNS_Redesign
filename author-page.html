@@ -10,6 +10,8 @@
     <link href="bootstrap-theme.min.css" rel="stylesheet">
 	
     <!-- Custom styles for this template -->
+
+    <link href="style.css" rel="stylesheet">
     <link href="stylesheet.css" rel="stylesheet">
 
     <!--Font Awesome Files-->
@@ -54,64 +56,61 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
 <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2" id="container">
 
 	<!--TOP NAVBAR START-->
-    <nav class="navbar navbar-default navbar-fixed-top topnavbar">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div id="top_nav" class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" id="top_nav_CNS" href="#">Capital News Service</a>
+    </div>
+    <!--<ul style="display:block; list-style-type:none">
+      <li id="Top_navbar_Poweredby_Merrill">Powered by the Philip Merrill College of Journalism</li>
+    </ul>
+    <ul style="display:block; list-style-type:none">
+      <li>Twitter</li>
+      <li>Facebook</li>
+    </ul>-->
+    <div>
+      <p id ="Top_navbar_Poweredby_Merrill">Powered by the <a class="white_link" href="http://www.merrill.umd.edu/" target="_blank">Philip Merrill Journalism School</a></p>
+    </div>
+    <div id="social_nav">
+      <div id="twitter_nav">
+        <a class="text-right" href="https://twitter.com/cnsmd">
+          <i id="twitter_bird_nav" class="fa fa-twitter fa-3x"></i>
+        </a>
+      </div>
+      <div id="facebook_nav">
+        <a class="text-right" href="https://www.facebook.com/MarylandCNS">
+          <i id="facebook_f_nav" class="fa fa-facebook fa-3x"></i>
+        </a>
+      </div>
+    </div>
+  </div><!-- /.container-fluid -->
 
-		<div id="logo">CAPITAL NEWS SERVICE</div>
+  <div class="second_nav container-fluid">
+    <div id="trending_nav">
+      <ul id="trending_list">
+        <li>TRENDING:</li>
+        <li><a href="" class="white_link">#Hogan</a></li>
+        <li><a href="" class="white_link">#Baltimore</a></li>
+        <li><a href="" class="white_link">#Pollution</a></li>
+        <li><a href="" class="white_link">#KirbyDelauter</a></li>
+        <li><a href="" class="white_link">#Nationals</a></li>
+      </ul>
+    </div>
 
-        <div id="topnavcontainer">
-
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top"></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="trending_nav nav navbar-nav navbar-right">
-                		<div class="col-sm-3 col-md-3 pull-right">
-							<form action="/search.html" class="search-wrapper cf">
-        						<input type="text" placeholder="Search here..." required="">
-        						<button type="submit">Search</button>
-    						</form>
-						</div>
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll trend_links" href="#environment">TRENDING:</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll trend_links" href="#environment">#Environment</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll trend_links" href="#politics">#Politics</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll trend_links" href="#local">#Local</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll trend_links" href="#sports">#Sports</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+    <div id="social_nav">
+      <div id="search_nav">
+        <form class="text-right"  style="cursor: pointer;">
+          <input type="search" placeholder="" style="cursor: pointer;">
+        </form>
+        <!--<a class="text-right" href="https://www.facebook.com/MarylandCNS">
+          <i id="search_glass_nav" class="fa fa-search fa-lg"></i>
+        </a>-->
+      </div>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
  
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
 
 	<div class="row">
             
@@ -121,12 +120,10 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
                         <h2>Jin Kim</h2>
                         <h3>Web Developer, Studio C</h3>
 
-                        <div class="author-social">
-                            <div class="col-xs-2 col-xs-offset-3">Facebook</div>
-                            <div class="col-xs-2">Twitter</div>
-                            <div class="col-xs-2">Email</div>
-                        </div>
-
+                        <ul>
+                            <li><i class="fa fa-twitter fa-3x"></i></li>
+                            <li><i class="fa fa-envelope fa-3x"></i></li>
+                        </ul>
                         <div class="col-xs-12">
                             <p>Jin creates some pretty rad graphics in Studio C. He also is working on the redesign of CNSMaryland.org.</p>  
                         </div>                              
@@ -134,8 +131,6 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
                 </div>
             </div>
 
-
-            <div class="category_name">Featured story</div>
             <div class="row">
                 <div class="col-sm-4">
                     <img src="images/cows.jpg" class="img-responsive" alt="cows">
@@ -147,7 +142,8 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
                 </div>
             </div>
 
-            <div class="category_name">Latest stories</div>
+            <hr/>
+
             <div class="row">
                 <div class="col-sm-12">
                     <h3>Maryland island, once diminished, reconstructed with dredged material</h3>
@@ -258,8 +254,6 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
     <!--Other javascripting-->
-
-
 
 </body>
 	

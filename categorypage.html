@@ -3,13 +3,15 @@
 
 <head>
 
-	<!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
-	
-	<!-- Bootstrap theme -->
+    
+    <!-- Bootstrap theme -->
     <link href="bootstrap-theme.min.css" rel="stylesheet">
-	
+    
     <!-- Custom styles for this template -->
+
+    <link href="style.css" rel="stylesheet">
     <link href="stylesheet.css" rel="stylesheet">
 
     <!--Font Awesome Files-->
@@ -19,10 +21,10 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
     <title>Capital News Service</title>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	
+    
 </head>
 
 <body>
@@ -46,104 +48,105 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
         CCCCCCCCCCCCCNNNNNNNN         NNNNNNN SSSSSSSSSSSSSSS            
 
 
-			
+            
         (╯°□°)╯︵ ┻━┻     "THE DINOSAURS ARE COMING! RUN!"
 
 -->
 
 <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2" id="container">
 
-	<!--TOP NAVBAR START-->
-    <nav class="navbar navbar-default navbar-fixed-top topnavbar">
+    <!--TOP NAVBAR START-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div id="top_nav" class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" id="top_nav_CNS" href="#">Capital News Service</a>
+    </div>
+    <!--<ul style="display:block; list-style-type:none">
+      <li id="Top_navbar_Poweredby_Merrill">Powered by the Philip Merrill College of Journalism</li>
+    </ul>
+    <ul style="display:block; list-style-type:none">
+      <li>Twitter</li>
+      <li>Facebook</li>
+    </ul>-->
+    <div>
+      <p id ="Top_navbar_Poweredby_Merrill">Powered by the <a class="white_link" href="http://www.merrill.umd.edu/" target="_blank">Philip Merrill Journalism School</a></p>
+    </div>
+    <div id="social_nav">
+      <div id="twitter_nav">
+        <a class="text-right" href="https://twitter.com/cnsmd">
+          <i id="twitter_bird_nav" class="fa fa-twitter fa-3x"></i>
+        </a>
+      </div>
+      <div id="facebook_nav">
+        <a class="text-right" href="https://www.facebook.com/MarylandCNS">
+          <i id="facebook_f_nav" class="fa fa-facebook fa-3x"></i>
+        </a>
+      </div>
+    </div>
+  </div><!-- /.container-fluid -->
 
-		<div id="logo">CAPITAL NEWS SERVICE</div>
+  <div class="second_nav container-fluid">
+    <div id="trending_nav">
+      <ul id="trending_list">
+        <li>TRENDING:</li>
+        <li><a href="" class="white_link">#Hogan</a></li>
+        <li><a href="" class="white_link">#Baltimore</a></li>
+        <li><a href="" class="white_link">#Pollution</a></li>
+        <li><a href="" class="white_link">#KirbyDelauter</a></li>
+        <li><a href="" class="white_link">#Nationals</a></li>
+      </ul>
+    </div>
 
-        <div id="topnavcontainer">
-
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top"></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="trending_nav nav navbar-nav navbar-right">
-                		<div class="col-sm-3 col-md-3 pull-right">
-							<form action="/search.html" class="search-wrapper cf">
-        						<input type="text" placeholder="Search here..." required="">
-        						<button type="submit">Search</button>
-    						</form>
-						</div>
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll trend_links" href="#environment">TRENDING:</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll trend_links" href="#environment">#Environment</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll trend_links" href="#politics">#Politics</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll trend_links" href="#local">#Local</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll trend_links" href="#sports">#Sports</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+    <div id="social_nav">
+      <div id="search_nav">
+        <form class="text-right"  style="cursor: pointer;">
+          <input type="search" placeholder="" style="cursor: pointer;">
+        </form>
+        <!--<a class="text-right" href="https://www.facebook.com/MarylandCNS">
+          <i id="search_glass_nav" class="fa fa-search fa-lg"></i>
+        </a>-->
+      </div>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
  
-<br/>
 
-<br/>
-<br/>
-<br/><br/>
-<br/>
-<br/>
-<br/>
-
-
-	<div class="row">
-        <div class="col-xs-12">
- 
-            <h1>Environment</h1>
-
-            <div class="category-header">
-                <div class="category-text">View a different topic <i class="fa fa-chevron-right"></i></div>
+    <div class="row">
+            
+            <div class="col-xs-12 category-header"> 
+                <h2>#LarryHogan</h2>
             </div>
 
-            <div class="center-block">
-                <img src="images/hogan.jpg" class="img-responsive" alt="Capital News Service">
+            <hr/>
+
+
+            <div class="row">
+                <div class="center-block" id="hogan-featured">
+                    <img src="images/hogan-featured.jpg" class="img-responsive" alt="Larry Hogan">
+                    <div class="col-xs-12">
+                        <h2 class="block-header">Md. hunters meet with lawmakers to discuss hunting season rules</h2>
+                    </div>
+                </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-4">photo will go here</div>
+                <div class="col-sm-4">
+                    <img src="images/cows.jpg" class="img-responsive" alt="cows">
+                </div>
                 <div class="col-sm-8">
                     <h3>Maryland raw milk cheese makers get to keep their cheesy grins</h3>
-                    <p>By Katelyn Newman | Feb. 12, 2015</p>
+                    <p>by Jin Kim | Feb. 12, 2015</p>
                     <p>After a successful five-year pilot program that enabled five dairy farms in Maryland to produce raw milk cheese from cows, goats and sheep, legislators on the Senate Finance Committee were easily in support of changing the program to be a more long-term business opportunity.</p>
                 </div>
             </div>
-    
+
             <hr/>
 
             <div class="row">
                 <div class="col-sm-12">
                     <h3>Maryland island, once diminished, reconstructed with dredged material</h3>
-                    <p>By Tim Curtis | Feb. 12, 2015</p>
+                    <p>by Jin Kim | Feb. 12, 2015</p>
                     <p>Chesapeake Bay island, once used as a presidential retreat but diminished to fewer than 5 acres by the 1980s, has been replenished with dredged material, creating wetlands that serve as a wildlife sanctuary. Poplar Island, located one mile northwest of Tilghman Island in Talbot County, began to vanish, like many bay islands, due to rising sea levels and erosion.</p>
                 </div>
             </div>
@@ -151,10 +154,12 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
             <hr/>
 
             <div class="row">
-                <div class="col-sm-4">photo goes here</div>
+                <div class="col-sm-4">
+                    <img src="images/hunting.jpg" class="img-responsive" alt="cows">
+                </div>
                 <div class="col-sm-8">
                     <h3>Hunters to meet with lawmakers in Annapolis to discuss baiting, hunting season rules</h3>
-                    <p>By Nate Rabner | Feb. 5, 2015</p>
+                    <p>By Jin Kim | Feb. 5, 2015</p>
                     <p>The Maryland Hunting Coalition organized the Blaze &amp; Camo Day rally to bring hunters' voices to the state capital. Participants wearing orange hats and camo jackets assembled on Lawyers' Mall and spoke with passing lawmakers, then visited legislative offices, handing out hats as they went.</p>
                 </div>
             </div>
@@ -162,10 +167,12 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
             <hr/>
 
             <div class="row">
-                <div class="col-sm-4">photo goes here</div>
+                <div class="col-sm-4">
+                    <img src="images/hogan.jpg" class="img-responsive" alt="cows">
+                </div>
                 <div class="col-sm-8">
                     <h3>Bill would mandate 8-year moratorium on 'fracking'</h3>
-                    <p>By Katelyn Newman | Feb. 5, 2015</p>
+                    <p>By Jin Kim | Feb. 5, 2015</p>
                     <p>Environmentally stringent and costly drilling regulations are not enough to protect the public's health from hydraulic fracturing's pollutants, according to a coalition of legislators, environmental groups and health professionals who rallied Thursday in support of a moratorium bill.</p>
                 </div>
             </div>
@@ -173,10 +180,12 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
             <hr/>
 
             <div class="row">
-                <div class="col-sm-4">photo goes here</div>
+                <div class="col-sm-4">
+                    <img src="images/crabs.jpg" class="img-responsive" alt="cows">
+                </div>
                 <div class="col-sm-8">
                     <h3>Bay report indicates overall improvement, but female crabs on decline</h3>
-                    <p>By Katelyn Newman | Feb. 3, 2015</p>
+                    <p>By Jin Kim | Feb. 3, 2015</p>
                     <p>Crab populations in the Chesapeake Bay continue to fall, and the water body may take decades to show signs of a strong recovery, according to a report released Tuesday by a coaltion of governments, environmental organizations and researchers.</p>
                 </div>
             </div>
@@ -195,41 +204,41 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
 
 
 <!--FOOTER-->
-	
+    
 <div id="footer">
 
-	<div id="footer_highlight"></div>
+    <div id="footer_highlight"></div>
 
-	<nav class="navbar navbar-default navbar-bottom" role="navigation">
+    <nav class="navbar navbar-default navbar-bottom" role="navigation">
 
-		<div class="arrow_box">
-			<div class="col-xs-12" id="footer_about">About | Contact | Join</div>
+        <div class="arrow_box">
+            <div class="col-xs-12" id="footer_about">About | Contact | Join</div>
 
-			<div class="col-sm-6">
-				<div class="col-xs-12">Powered by:</div>
-				<div class="col-xs-12"><a href="http://www.merrill.umd.edu/" target="_blank"><img class ="img-responsive" src="images/merrill.png"></a></div>
-			</div> 
-			<div class="col-sm-6">
-				<div class="col-xs-12">Subscribe:</div>
-					<form action="/search.html" class="search-wrapper cf">
-						<input type="text" placeholder="Your email address..." required="">
-						<button type="submit">Submit</button>
-					</form>
-			</div>
+            <div class="col-sm-6">
+                <div class="col-xs-12">Powered by:</div>
+                <div class="col-xs-12"><a href="http://www.merrill.umd.edu/" target="_blank"><img class ="img-responsive" src="images/merrill.png"></a></div>
+            </div> 
+            <div class="col-sm-6">
+                <div class="col-xs-12">Subscribe:</div>
+                    <form action="/search.html" class="search-wrapper cf">
+                        <input type="text" placeholder="Your email address..." required="">
+                        <button type="submit">Submit</button>
+                    </form>
+            </div>
 
-			<div class="col-xs-12" id="copyright">
-				<ul id="footer_social">
-					<li><a href="" target="_blank"><i id="bottom_social_Twitter" class="bottom_social fa fa-twitter fa-2x"></i></a></li> 
-					<li><a href="" target="_blank"><i id="bottom_social_Facebook" class="bottom_social fa fa-facebook fa-2x"></i></a></li>
-					<li><a href="" target="_blank"><i id="bottom_social_Instagram" class="bottom_social fa fa-instagram fa-2x"></i></a></li>
-				</ul>
-				<hr>
-				<p>&copy; 2015 Capital News Service. All rights reserved.</p>
-			</div>
+            <div class="col-xs-12" id="copyright">
+                <ul id="footer_social">
+                    <li><a href="" target="_blank"><i id="bottom_social_Twitter" class="bottom_social fa fa-twitter fa-2x"></i></a></li> 
+                    <li><a href="" target="_blank"><i id="bottom_social_Facebook" class="bottom_social fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href="" target="_blank"><i id="bottom_social_Instagram" class="bottom_social fa fa-instagram fa-2x"></i></a></li>
+                </ul>
+                <hr>
+                <p>&copy; 2015 Capital News Service. All rights reserved.</p>
+            </div>
 
-		</div>
+        </div>
 
-	</nav>
+    </nav>
 
 </div>
 
@@ -245,9 +254,7 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
 
     <!--Other javascripting-->
 
-
-
 </body>
-	
+    
 
 </html>
