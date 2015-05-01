@@ -13,6 +13,7 @@
 
     <link href="css/searchbar-style.css" rel="stylesheet">
     <link href="stylesheet.css" rel="stylesheet">
+    <link href="css/top-nav.css" rel="stylesheet">
 
     <!--Font Awesome Files-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -56,35 +57,31 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
 <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2" id="container">
 
     <!--TOP NAVBAR START-->
+
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div id="top_nav" class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+  <div id="top-nav" class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" id="top_nav_CNS" href="#">Capital News Service</a>
+      <a class="navbar-brand" id="top-nav-cns" href="#">Capital News Service</a>
     </div>
-    <!--<ul style="display:block; list-style-type:none">
-      <li id="Top_navbar_Poweredby_Merrill">Powered by the Philip Merrill College of Journalism</li>
-    </ul>
-    <ul style="display:block; list-style-type:none">
-      <li>Twitter</li>
-      <li>Facebook</li>
-    </ul>-->
+    
+    <!--
     <div>
-      <p id ="Top_navbar_Poweredby_Merrill">Powered by the <a class="white_link" href="http://www.merrill.umd.edu/" target="_blank">Philip Merrill Journalism School</a></p>
+      <p id ="Top_navbar_Poweredby_Merrill">Powered by the <a class="white_link" href="http://www.merrill.umd.edu/" target="_blank">Philip Merrill College of Journalism</a></p>
     </div>
-    <div id="social_nav">
-      <div id="twitter_nav">
-        <a class="text-right" href="https://twitter.com/cnsmd">
-          <i id="twitter_bird_nav" class="fa fa-twitter fa-3x"></i>
-        </a>
-      </div>
-      <div id="facebook_nav">
-        <a class="text-right" href="https://www.facebook.com/MarylandCNS">
-          <i id="facebook_f_nav" class="fa fa-facebook fa-3x"></i>
-        </a>
-      </div>
+    -->
+
+    <div id="social-nav">
+        <div class="social-square" id="social-fb">
+            <span><i class="fa fa-facebook fa-3x"></i></span>
+        </div>
+        <div class="social-square" id="social-tw">
+            <span><i class="fa fa-twitter fa-3x"></i></span>
+        </div>
+        <div class="social-square" id="social-search">
+            <span><i class="fa fa-search fa-3x"></i></span>
+        </div>
     </div>
-  </div><!-- /.container-fluid -->
+  </div>
 
   <div class="second_nav container-fluid">
     <div id="trending_nav">
@@ -94,21 +91,21 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
         <li><a href="" class="white_link">#Baltimore</a></li>
         <li><a href="" class="white_link">#Pollution</a></li>
         <li><a href="" class="white_link">#KirbyDelauter</a></li>
-        <li><a href="" class="white_link">#Nationals</a></li>
+        <li><a href="" class="white_link">#Orioles</a></li>
       </ul>
     </div>
 
+<!--
     <div id="social_nav">
       <div id="search_nav">
         <form class="text-right"  style="cursor: pointer;">
           <input type="search" placeholder="" style="cursor: pointer;">
         </form>
-        <!--<a class="text-right" href="https://www.facebook.com/MarylandCNS">
-          <i id="search_glass_nav" class="fa fa-search fa-lg"></i>
-        </a>-->
       </div>
     </div>
-  </div><!-- /.container-fluid -->
+-->
+
+  </div>
 </nav>
  
 
@@ -124,9 +121,11 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
             <div class="row">
                 <div class="center-block" id="hogan-featured">
                     <img src="images/hogan-featured.jpg" class="img-responsive" alt="Larry Hogan">
+                <!-- 
                     <div class="col-xs-12">
                         <h2 class="block-header">Md. hunters meet with lawmakers to discuss hunting season rules</h2>
                     </div>
+                -->
                 </div>
             </div>
 
@@ -253,7 +252,6 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
     <!--Other javascripting-->
-
 </body>
     
 

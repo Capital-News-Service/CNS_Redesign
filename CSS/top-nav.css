@@ -1,0 +1,270 @@
+
+/*
+***********************************************
+
+          TOP MENU
+
+***********************************************
+*/
+
+#top-nav {
+  background-color: #1e1e1e;
+  font-family: "Lovelo";
+}
+
+#top-nav-cns {
+  margin-left: 2em;
+  position: relative;
+  word-wrap: normal;
+  font-size: 3em;
+  padding-top: 0.7em;
+  color: #1e1e1e;
+  background-color:  #ffd500;
+}
+
+/*SOCIAL NAV TOP MENU*/
+
+#social-nav {
+  position: fixed;
+  color: white;
+}
+
+.social-square {
+  width: 5.5em;
+  height: 5.5em;
+  padding-top: 1.2em;
+  position: relative;
+  display: table-cell;
+  text-align: center;
+}
+#social-fb {
+  background-color: #3b5998;
+}
+#social-tw {
+  background-color: #55acee;
+}
+#social-search {
+  background-color: #c1c1c1;
+}
+
+/*
+@media (max-width: 512px) { 
+  #social-fb, #social-tw { 
+    display: none;
+  }
+*/
+
+
+
+
+#search_nav {
+  background-color: #7e7e7e;
+  padding: 0px;
+  display: inline;
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  padding-right: 0px;
+}
+
+
+#twitter-nav 
+{
+  background-color: #55acee;
+  padding: 15.3px;
+  padding-bottom: 9px;
+  display: inline;
+  position: fixed;
+  top: -2px;
+  right: 47px;
+}
+
+#facebook-nav 
+{
+  background-color: #3b5998;
+  padding: 18.3px;
+  display: inline;
+  position: fixed;
+  top: -6px;
+  right: 0px;
+}
+
+
+
+
+
+
+/* *********************************************** */
+
+#trending_list li 
+{
+  display: inline;
+  padding: 8px;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.white_link 
+{
+  color:white;
+}
+
+
+
+
+#search_nav {
+  background-color: #7e7e7e;
+  padding: 0px;
+  display: inline;
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  padding-right: 0px;
+}
+
+
+
+#twitter_bird_nav 
+{
+  color:white;
+  position: relative;
+  top: 0px;
+}
+
+#search_glass_nav
+{
+  color:white;
+}
+
+#facebook_f_nav
+{
+  color: white;
+  position: relative;
+  top: 0px;
+}
+
+#text-right 
+{
+  text-align: right;
+  display: inline;
+}
+
+
+#trending_nav 
+{
+  color:white;
+  position: relative;
+  bottom: -7px;
+  left: 24px;
+}
+
+.second_nav 
+{
+  background-color: #696969;
+  height: 30px;
+}
+
+
+
+#top_nav_Trending
+{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 100%;
+  color: white;
+  position: relative;
+  bottom: 7px;
+}
+
+#Top_navbar_Poweredby_Merrill
+{
+  color: white;
+  font-size: 1em;
+  position: relative;
+  top: 30px;
+  left: 6%;
+
+}
+
+#trending_list li
+{
+  display:inline;
+  padding: 8px;
+  list-style-type:none;
+  margin:0;
+  padding: 8px;
+  position: relative;
+  top: 2px;
+}
+
+/*
+=======
+>>>>>>> origin/master
+#logo {
+  color: #ffd500;
+  font-size: 2em;
+  margin: 10px;
+  text-align: left; 
+  font-family: 'Lovelo';
+  z-index: 1;
+}
+*/
+
+.just_trending {
+  margin-right: 1px;
+}
+
+.trending_nav {
+  margin-right: 38px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: #ffd500;
+}
+
+#poweredbybar {
+  width: 44.5%;
+  height: 25px;
+  background-color: #404040;
+  position: relative;
+  top: -50px;
+  left: 99px;
+  padding-left: 17px;
+  z-index: -1;
+}
+
+#poweredbytext {
+  font-size: 11.5px;
+  position: relative;
+  top: 13%;
+  color: white;
+}
+
+.topnavbar {
+  z-index: 10;
+}
+
+#topnavcontainer{
+  background-color: #262626;
+}
+
+#trending_list {
+  margin-right: 100px;
+}
+
+
+/*.navbar-header {
+  float: none;
+}
+
+.navbar-toggle {
+  display: block;
+}
+
+.navbar-collapse.collapse {
+  display: none !important;
+} This makes the navbar always collapsed*/
+
+/*
