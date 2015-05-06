@@ -1,11 +1,19 @@
 
-/*
-***********************************************
+/* TOP MENU */
 
-          TOP MENU
+table {
+  width: 100%;
+  margin: 0!important;
+}
+li span {
+  color: #ffd500;
+}
 
-***********************************************
-*/
+#menu {
+  text-align: center;
+  color: #d3d3d3;
+  padding: 5px;
+}
 
 #top-nav {
   background-color: #1e1e1e;
@@ -13,29 +21,24 @@
 }
 
 #top-nav-cns {
-  margin-left: 2em;
-  position: relative;
   word-wrap: normal;
   font-size: 3em;
+  text-align: center;
   padding-top: 0.7em;
   color: #1e1e1e;
   background-color:  #ffd500;
 }
 
-/*SOCIAL NAV TOP MENU*/
-
-#social-nav {
-  position: fixed;
-  color: white;
-}
-
+/* SOCIAL BUTTONS */
 .social-square {
   width: 5.5em;
   height: 5.5em;
-  padding-top: 1.2em;
+  padding-top: 1.1em;
   position: relative;
   display: table-cell;
   text-align: center;
+  color: white;
+  vertical-align: middle;
 }
 #social-fb {
   background-color: #3b5998;
@@ -43,56 +46,35 @@
 #social-tw {
   background-color: #55acee;
 }
-#social-search {
-  background-color: #c1c1c1;
+
+
+/* SECONDARY NAV MENU */
+
+#second-nav {
+  background-color: #696969;
+  width: 100%;
+  font-family: 'Lovelo';
+  font-size: 1.2em;
+}
+#powered-by {
+  color: #1e1e1e;
+  text-align: center;
+  background-color: #fde159;
 }
 
-/*
-@media (max-width: 512px) { 
-  #social-fb, #social-tw { 
+#trending-list {
+  text-align: center;
+  color: #d3d3d3;
+}
+
+
+/* MOBILE MENU
+@media (max-width: 967px) { 
+  #social-fb, #social-tw, #trending-list { 
     display: none;
   }
-*/
-
-
-
-
-#search_nav {
-  background-color: #7e7e7e;
-  padding: 0px;
-  display: inline;
-  position: fixed;
-  top: 50px;
-  right: 0px;
-  padding-right: 0px;
 }
-
-
-#twitter-nav 
-{
-  background-color: #55acee;
-  padding: 15.3px;
-  padding-bottom: 9px;
-  display: inline;
-  position: fixed;
-  top: -2px;
-  right: 47px;
-}
-
-#facebook-nav 
-{
-  background-color: #3b5998;
-  padding: 18.3px;
-  display: inline;
-  position: fixed;
-  top: -6px;
-  right: 0px;
-}
-
-
-
-
-
+ */
 
 /* *********************************************** */
 
@@ -111,18 +93,6 @@
   color:white;
 }
 
-
-
-
-#search_nav {
-  background-color: #7e7e7e;
-  padding: 0px;
-  display: inline;
-  position: fixed;
-  top: 50px;
-  right: 0px;
-  padding-right: 0px;
-}
 
 
 
@@ -160,11 +130,7 @@
   left: 24px;
 }
 
-.second_nav 
-{
-  background-color: #696969;
-  height: 30px;
-}
+
 
 
 
@@ -178,15 +144,6 @@
   bottom: 7px;
 }
 
-#Top_navbar_Poweredby_Merrill
-{
-  color: white;
-  font-size: 1em;
-  position: relative;
-  top: 30px;
-  left: 6%;
-
-}
 
 #trending_list li
 {
