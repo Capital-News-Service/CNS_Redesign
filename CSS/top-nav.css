@@ -1,6 +1,4 @@
 
-/* TOP MENU */
-
 table {
   width: 100%;
   margin: 0!important;
@@ -9,10 +7,10 @@ li span {
   color: #ffd500;
 }
 
-#menu {
+#menu-trigger {
   text-align: center;
   color: #d3d3d3;
-  padding: 5px;
+  width: 75px;
 }
 
 #top-nav {
@@ -27,9 +25,11 @@ li span {
   padding-top: 0.7em;
   color: #1e1e1e;
   background-color:  #ffd500;
+  width: 320px;
 }
 
 /* SOCIAL BUTTONS */
+
 .social-square {
   width: 5.5em;
   height: 5.5em;
@@ -76,152 +76,99 @@ li span {
 }
  */
 
-/* *********************************************** */
-
-#trending_list li 
-{
-  display: inline;
-  padding: 8px;
-  list-style-type: none;
-  margin: 0;
-  padding: 8px;
-  font-size: 12px;
-}
-
-.white_link 
-{
-  color:white;
-}
-
-
-
-
-#twitter_bird_nav 
-{
-  color:white;
-  position: relative;
-  top: 0px;
-}
-
-#search_glass_nav
-{
-  color:white;
-}
-
-#facebook_f_nav
-{
-  color: white;
-  position: relative;
-  top: 0px;
-}
-
-#text-right 
-{
-  text-align: right;
-  display: inline;
-}
-
-
-#trending_nav 
-{
-  color:white;
-  position: relative;
-  bottom: -7px;
-  left: 24px;
-}
-
-
-
-
-
-#top_nav_Trending
-{
-  margin-left: 15%;
-  margin-bottom: 10%;
-  width: 100%;
-  color: white;
-  position: relative;
-  bottom: 7px;
-}
-
-
-#trending_list li
-{
-  display:inline;
-  padding: 8px;
-  list-style-type:none;
-  margin:0;
-  padding: 8px;
-  position: relative;
-  top: 2px;
-}
 
 /*
-=======
->>>>>>> origin/master
-#logo {
-  color: #ffd500;
-  font-size: 2em;
-  margin: 10px;
-  text-align: left; 
-  font-family: 'Lovelo';
-  z-index: 1;
-}
+===========================================
+                SIDE MENU!
+===========================================
 */
 
-.just_trending {
-  margin-right: 1px;
+/*from http://codepen.io/anon/pen/pJgEgy?editors=110*/
+
+/* Navigation Menu - Background */
+.navigation {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  background: #1e1e1e;
 }
 
-.trending_nav {
-  margin-right: 38px;
+/* Navigation Menu - List items */
+.nav-item {
+  width: 200px;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-  color: #ffd500;
-}
-
-#poweredbybar {
-  width: 44.5%;
-  height: 25px;
-  background-color: #404040;
-  position: relative;
-  top: -50px;
-  left: 99px;
-  padding-left: 17px;
-  z-index: -1;
-}
-
-#poweredbytext {
-  font-size: 11.5px;
-  position: relative;
-  top: 13%;
-  color: white;
-}
-
-.topnavbar {
-  z-index: 10;
-}
-
-#topnavcontainer{
-  background-color: #262626;
-}
-
-#trending_list {
-  margin-right: 100px;
-}
-
-
-/*.navbar-header {
-  float: none;
-}
-
-.navbar-toggle {
+.nav-item a {
   display: block;
+  padding: 1em;
+  background: #1e1e1e;
+  color: white;
+  font-size: 1.4em;
+  text-decoration: none;
+  text-align: left;
 }
 
-.navbar-collapse.collapse {
-  display: none !important;
-} This makes the navbar always collapsed*/
+.nav-item a:hover {
+  color: #c74438;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
 
-/*
+/* Site Wrapper - Everything that isn't navigation */
+
+.site-wrap {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+    margin: 0;
+}
+
+/* Nav Trigger */
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  position: fixed;
+  left: 25px; top: 15px;
+  color: #fff;
+  z-index: 3;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+}
+
+.nav-trigger:checked + label {
+  left: 175px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.nav-trigger + label, .site-wrap {
+  transition: left 0.2s;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }

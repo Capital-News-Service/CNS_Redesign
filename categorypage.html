@@ -53,10 +53,13 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
         (╯°□°)╯︵ ┻━┻     "THE DINOSAURS ARE COMING! RUN!"
 
 -->
+
 <nav class="navbar-fixed-top">
     <table>
         <tr id="top-nav">
-            <td rowspan="2" id="menu"><i class="fa fa-bars fa-3x"></i></td>
+            <td rowspan="2" id="menu">
+                <label for="nav-trigger"><i class="fa fa-bars fa-3x"></i></label>
+            </td>
             <td id="top-nav-cns">Capital News Service</td>
             <td colspan="5">[nothing here]</td>
             <td class="social-square" id="social-fb">
@@ -86,7 +89,16 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
     </table>
 </nav>
 
+<ul class="navigation">
+    <li class="nav-item"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="#">Portfolio</a></li>
+    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#">Blog</a></li>
+    <li class="nav-item"><a href="#">Contact</a></li>
+</ul>
 
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
 
 
 <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2" id="container">

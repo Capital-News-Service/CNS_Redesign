@@ -3,17 +3,20 @@
 
 <head>
 
-	<!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
-	
-	<!-- Bootstrap theme -->
+    
+    <!-- Bootstrap theme -->
     <link href="bootstrap-theme.min.css" rel="stylesheet">
-	
-    <!-- Custom styles for this template -->
-    <link href="stylesheet.css" rel="stylesheet">
-
-    <!--Custom styles for search section-->
-    <link href="CSS/searchbar_style.css" rel="stylesheet">
+    
+    <!-- Custom styles -->    
+    <link href="stylesheet.css" rel="stylesheet"> 
+    <!-- Top nav -->    
+    <link href="css/top-nav.css" rel="stylesheet">
+    <!--For side menu-->
+    <link rel="stylesheet" href="css/nav-style.css">
+    <!--For search bar (merge later)-->
+    <link href="css/searchbar-style.css" rel="stylesheet">
 
     <!--Font Awesome Files-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -21,14 +24,11 @@
     <!--Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
     <title>Capital News Service</title>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	
+    
 </head>
 
 <body>
@@ -57,61 +57,79 @@ C:::::C              N::::::N    N::::::::::N            S:::::S
 
 -->
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div id="top_nav" class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a class="navbar-brand" id="top_nav_CNS" href="#">Capital News Service</a>
-    </div>
-    <!--<ul style="display:block; list-style-type:none">
-      <li id="Top_navbar_Poweredby_Merrill">Powered by the Philip Merrill College of Journalism</li>
-    </ul>
-    <ul style="display:block; list-style-type:none">
-      <li>Twitter</li>
-      <li>Facebook</li>
-    </ul>-->
-    <div>
-      <p id ="Top_navbar_Poweredby_Merrill">Powered by the <a class="white_link" href="http://www.merrill.umd.edu/" target="_blank">Philip Merrill Journalism School</a></p>
-    </div>
-    <div id="social_nav">
-      <div id="twitter_nav">
-        <a class="text-right" href="https://twitter.com/cnsmd">
-          <i id="twitter_bird_nav" class="fa fa-twitter fa-3x"></i>
-        </a>
-      </div>
-      <div id="facebook_nav">
-        <a class="text-right" href="https://www.facebook.com/MarylandCNS">
-          <i id="facebook_f_nav" class="fa fa-facebook fa-3x"></i>
-        </a>
-      </div>
-    </div>
-  </div><!-- /.container-fluid -->
+<ul class="navigation">
+    <li class="nav-item"><a href="#">HOME</a></li>
+    <li class="nav-item"><a href="#">POLITICS</a></li>
+      <!--subcategories could be state/national?-->
+    <li class="nav-item"><a href="#">ENVIRONMENT</a></li>
+    <li class="nav-item"><a href="#">EDUCATION</a></li>
+    <li class="nav-item"><a href="#">JUSTICE</a></li>
+    <li class="nav-item"><a href="#">SPORTS</a></li>
+    <li class="nav-item"><a href="#">VIDEOS</a></li>
+    <li class="nav-item"><a href="#">STUDIO C</a></li>
+    <li class="nav-item"><a href="#">ABOUT CNS</a></li>
+</ul>
 
-  <div class="second_nav container-fluid">
-    <div id="trending_nav">
-      <ul id="trending_list">
-        <li>TRENDING:</li>
-        <li><a href="" class="white_link">#Hogan</a></li>
-        <li><a href="" class="white_link">#Baltimore</a></li>
-        <li><a href="" class="white_link">#Pollution</a></li>
-        <li><a href="" class="white_link">#KirbyDelauter</a></li>
-        <li><a href="" class="white_link">#Nationals</a></li>
-      </ul>
-    </div>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"><i class="fa fa-bars fa-3x"></i></label>
 
-    <div id="social_nav">
-      <div id="search_nav">
-        <form class="text-right"  style="cursor: pointer;">
-          <input type="search" placeholder="" style="cursor: pointer;">
-        </form>
-        <!--<a class="text-right" href="https://www.facebook.com/MarylandCNS">
-          <i id="search_glass_nav" class="fa fa-search fa-lg"></i>
-        </a>-->
-      </div>
-    </div>
-  </div><!-- /.container-fluid -->
-</nav>
+<div class="site-wrap">
+
+  <div class="navbar-fixed-top">
+      <table>
+          <tr id="top-nav">
+              <td rowspan="2" id="menu-trigger"></td>
+              <td id="top-nav-cns">Capital News Service</td>
+              <td colspan="5"></td>
+              <td class="social-square" id="social-fb">
+                  <span><i class="fa fa-facebook fa-3x"></i></span>
+              </td>
+              <td class="social-square" id="social-tw">
+                  <span><i class="fa fa-twitter fa-3x"></i></span>      
+              </td>
+          </tr>
+          <tr id="second-nav">
+              <td id="powered-by" valign="middle">Powered by the Philip Merrill College of Journalism</td>
+              <td colspan="5">
+                  <ul id="trending-list">
+                      <li><span>Trending:</span></li>
+                      <li>#Hogan</li>
+                      <li>#Baltimore</li>
+                      <li>#KirbyDelauter</li>
+                      <li>#Orioles</li>
+                  </ul>
+              </td>
+              <td colspan="2" id="search-nav">
+                  <form class="text-right"  style="cursor: pointer;">
+                      <input type="search" placeholder="" style="cursor: pointer;">
+                  </form>
+              </td>
+          </tr>
+      </table>
+  </div>
+
+  <div class="col-xs-10 col-xs-offset-1" style="margin-top: 100px">
+    <p>Occupy Banksy Odd Future, flexitarian salvia Austin kogi tote bag fap. Normcore dreamcatcher forage Carles cronut Odd Future paleo, heirloom bicycle rights. Irony ennui Marfa Pitchfork, kogi listicle crucifix master cleanse Godard wolf. Tattooed selfies Vice, mixtape lumbersexual keffiyeh leggings tote bag Etsy. Street art squid pop-up Thundercats leggings gluten-free, Carles heirloom raw denim semiotics Wes Anderson messenger bag blog. Mustache messenger bag distillery craft beer, DIY asymmetrical XOXO Williamsburg pop-up gentrify. Direct trade jean shorts Pitchfork, cliche hashtag meditation keytar seitan wolf bitters yr pickled.</p>
+
+    <p>Ugh skateboard put a bird on it viral vinyl ennui sustainable, fanny pack polaroid. Occupy Williamsburg +1 High Life semiotics craft beer. Semiotics actually scenester tote bag hoodie quinoa swag artisan tousled irony Helvetica put a bird on it flexitarian. 8-bit salvia banjo yr roof party VHS. 3 wolf moon gastropub meditation, artisan Odd Future pour-over wolf sustainable brunch +1 McSweeney's paleo umami post-ironic. Lo-fi keffiyeh Shoreditch, YOLO cliche banjo typewriter tousled. Gastropub tilde keffiyeh, cornhole cray McSweeney's vinyl normcore farm-to-table flannel distillery hashtag scenester.</p>
+
+    <p>Gluten-free hella Schlitz, deep v drinking vinegar Wes Anderson leggings Bushwick artisan you probably haven't heard of them raw denim. Letterpress street art trust fund photo booth. Banh mi asymmetrical Odd Future, leggings scenester Carles sustainable lumbersexual locavore. YOLO Marfa literally wolf viral, brunch Echo Park. 8-bit next level fanny pack, forage scenester mustache gastropub Intelligentsia pork belly cronut pickled farm-to-table. Cronut art party fanny pack master cleanse, ugh pug hoodie chia keytar Wes Anderson bespoke meh cray umami distillery. Williamsburg scenester brunch, gentrify swag four dollar toast heirloom Etsy dreamcatcher pop-up.</p>
+
+    <p>Blog Odd Future four loko Truffaut fashion axe next level listicle. Migas raw denim trust fund gluten-free salvia tote bag, you probably haven't heard of them freegan kitsch. Meh Brooklyn craft beer lo-fi brunch, dreamcatcher skateboard 3 wolf moon hella. Pickled Marfa salvia, health goth Kickstarter trust fund tote bag selvage viral pug McSweeney's. Banjo cray PBR cold-pressed swag single-origin coffee Intelligentsia, jean shorts lomo irony locavore trust fund. Cred tilde Pitchfork readymade cold-pressed tattooed. Four dollar toast gluten-free mustache shabby chic, yr Bushwick fanny pack tofu 90's.</p>
+  </div>
+
+</div>
 
 
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
 
 </body>
+    
+
+</html>
