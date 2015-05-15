@@ -1,0 +1,498 @@
+.row {
+	margin: 0;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	overflow-x: hidden; 
+}
+
+h1 {
+	color: white;
+}
+
+h3 {
+  font-weight: 700;
+}
+	
+h4 {
+  color: black;
+}
+
+.block-header {
+	font-weight: 400;
+	line-height: 1.5;
+	font-size: 1.3em;
+	color: #fff;
+	background-color:rgba(68, 68, 67, 0.7);
+}
+
+.byline {
+    color: white;
+    font-size: .8em;
+}
+
+.category {
+	position: relative;
+	background-color: #999;
+	padding: 0;
+}
+#category-wrapper{
+	position: relative;
+	margin-left: 0;
+	overflow: hidden;
+}
+#category-wrapper img {
+	width: 100%;
+	min-width: 320px;
+}
+#category-wrapper h1 {
+	position: absolute;
+	left: 0; 
+	bottom: 20px;
+	padding-left: 15px;
+	background-color:rgba(68, 68, 67, 0.7);
+}
+@media (max-width: 500px) { 
+	#category-wrapper h1 {
+		font-size: 1.3em;
+	}
+}
+#category-wrapper p {
+	position: absolute;
+	bottom: 0px;
+	padding-left: 15px;
+	background-color:rgba(68, 68, 67, 0.7);
+}
+
+.category-name {
+	background-color: #990000;
+	color: white;
+	text-align: left;
+	position: absolute;
+	font-size: 20px;
+	left: -5px;
+	top: -8px;
+	z-index: 2;
+}
+
+/* arrow code from stackoverflow.com/questions/16237181/how-to-add-bordered-triangle-over-a-div-tag */
+.arrow-box {
+    position: relative;
+    background: #262626;
+    width: 100%;
+    height: 285px;
+    padding: 10px;
+}
+.arrow-box:after, 
+.arrow-box:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow-box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #262626;
+    border-width: 19px;
+    left: 50%;
+    margin-left: -19px;
+}
+.arrow-box:before {
+    border-color: rgba(113, 158, 206, 0);
+    border-width: 20px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+/* SECTIONS */
+section {
+	margin-top: 30px;
+	padding: 0 10px;
+}
+
+/* SLIDER */
+#top {
+	margin-top: 150px;
+	padding: 0;
+}
+#main-slider-wrapper {
+	padding: 0;
+}
+#main-slider {
+	position: relative;
+	margin-left: 0;
+	overflow: hidden;
+}
+#main-slider img {
+	width: 100%;
+	min-width: 320px;
+}
+#main-slider h1 {
+	position: absolute;
+	left: 0; 
+	bottom: 20px;
+	padding-left: 15px;
+	background-color:rgba(68, 68, 67, 0.7);
+}
+#main-slider h4 {
+	position: absolute;
+	top: 0;
+	padding-left: 15px;
+	background-color:rgba(68, 68, 67, 0.7);
+}
+@media (max-width: 500px) { 
+	#main-slider h1 {
+		font-size: 2em;
+	}
+}
+
+#main-slider p {
+	position: absolute;
+	bottom: 0px;
+	padding-left: 15px;
+	background-color:rgba(68, 68, 67, 0.7);
+}
+
+#main-slider h4 {
+  color: #ffd500;
+}
+
+/* LATEST NEWS */
+#latest-header-wrapper {
+	padding: 0 10px;
+}
+#latest-header {
+  color: white;
+  background-color: #404040;
+  padding: 0;
+  margin-top: 30px;
+}
+#latest-arrow {
+    position: relative;
+    background: #990000;
+    height: 40px;
+    margin: 0;
+    font-size: 1.3em;
+    padding: 8px;
+    text-align: center;
+}
+#latest-arrow:after, 
+#latest-arrow:before {
+    top: 100%;
+}
+#latest-arrow:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #990000;
+}
+#latest-body {
+  background-color: #444443;
+  height: 370px;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+#latest-body p:first-child {
+  padding-top: 24px;
+}
+#latest-body span {
+  color: #ffd500;
+}
+#latest-body span, #latest-body p{
+	padding: 0 10px;
+}
+
+/* CNS TV */
+#cnstv {
+	padding: 0;
+}
+#cnstv-header {
+  background-color: #ffd500;
+  height: 38px;
+}
+#cnstv-slider {
+	padding: 0;
+}
+@media (min-width: 768px) { 
+	#cnstv-slider {
+		display: none;
+	}
+}
+#cnstv-text {
+  color: #fff;
+  text-align: left; 
+  vertical-align: middle; 
+  font-size: 4.2em;
+  font-weight: 700;
+  line-height: 0.5em;
+  position: relative;
+  top: 4px;
+  right: 0px;
+}
+#cnstv-subtext { 
+	color: #fff;
+	font-size: 2em;
+	float: right;
+}
+@media (max-width: 1280px) { 
+	#cnstv-subtext { 
+		display: none;
+	}
+}
+#cnstv-content {
+	height: 300px;
+	background-color: black;
+	margin-top: 10px;
+}
+
+#hogan {
+	margin-top: 30px;
+}
+
+/* STUDIO-C */
+#studioc {
+	padding: 0;
+}
+#studioc-col {
+	padding: 0;
+}
+#studioc-arrow {
+    position: relative;
+    background: #444443;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+#studioc-arrow:after, 
+#studioc-arrow:before {
+    top: 100%;
+    border: solid transparent;
+    position: absolute;
+}
+#studioc-arrow:after {
+    border-top-color: #444443;
+    border-width: 19px;
+}
+#studioc-arrow:before {
+    border-width: 20px;
+}
+
+#studiocname {
+	font-size: 4em;
+	color:white;
+	padding-left: 5px;
+}
+#studiocname span {
+  color: #ffd400;
+  margin: 0;
+}
+#studioctagline {
+  display: none;  
+}
+.subcategory {
+	position: relative;
+	margin-left: 0;
+	overflow: hidden;
+}
+.subcategory img {
+	width: 100%;
+	min-width: 320px;
+}
+@media(min-width:320px) {
+	.subcategory {
+		display: none;
+	}
+    #firstsubcategory {
+		display: block;
+	}
+}
+.subcategory h3 {
+	position: absolute;
+	left: 0; 
+	top: 0;
+	padding-left: 15px;
+	background-color:rgba(68, 68, 67, 0.7);
+}
+.subcategory h1 {
+	position: absolute;
+	left: 0; 
+	bottom: 30px;
+	padding-left: 15px;
+	color: white;
+	background-color:rgba(68, 68, 67, 0.7);
+}
+@media (max-width: 400px) { 
+	.subcategory h1 {
+		font-size: .4em;
+	}
+}
+
+#education {
+	margin-top: 30px;
+}
+
+/* CNS INVESTIGATES */
+#investigates {
+  background-color: #ffd500;
+  height: 500px;
+}
+#investigates-header {
+  font-weight: 700;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  height: auto;
+  overflow: visible;
+}
+#investigates-teaser {
+  text-align: center;
+}
+#investigates-teaser h3 {
+  font-weight: 300;
+  font-size: 1em;
+  font-style: italic;
+}
+
+
+
+/*
+
+***********************************************
+
+					FOOTER
+
+***********************************************
+
+*/
+
+#footer {
+	padding: 0;
+}
+#footer *{
+  color: white;
+}
+
+#footer_highlight {
+  background-color: #ffd500;
+  width: 100%;
+  height: 12px;
+  margin-top: 38px;
+  overflow-x:hidden; 
+}
+
+.arrow_box {
+    position: relative;
+    background: #262626;
+    width: 100%;
+}
+.arrow_box:after, 
+.arrow_box:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #262626;
+    border-width: 19px;
+    left: 50%;
+    margin-left: -19px;
+}
+.arrow_box:before {
+    border-color: rgba(113, 158, 206, 0);
+    border-width: 20px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+
+.navbar {
+	border: 0;
+  margin: 0;
+}
+
+.form-group-edit {
+  margin-left: 2.5%;
+}
+
+#footer_social li {
+  display: inline;
+  list-style-type: none;
+  vertical-align: center;
+  position: relative;
+  right: 1.6%;
+}
+
+.bottom_social {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#bottom_social_Facebook:hover {
+  color:#3b5998;
+}
+#bottom_social_Instagram:hover {
+  color:#3f729b;
+}
+#bottom_social_Twitter:hover {
+  color:#55acee;
+}
+
+.merrill_logo {
+  width: 55%;
+}
+
+.email_form_size {
+    width: 50%;
+}
+
+#footer_about {
+  margin-bottom: 12px;
+  margin-top: 7px;
+  position: inherit;
+  margin-right: .06%;
+  text-align: center;
+}
+
+#Bottom_PoweredBy {
+  position: relative;
+  top: 2%;
+  left: 21%;
+}
+
+#Bottom_Subscribe {
+  position: relative;
+  left: 5%;
+}
+
+@media (max-width: 767px) {
+
+  .arrow_box {
+    position: relative;
+    background: #262626;
+    width: 100%;
+    height: 320px;
+    padding: 10px;
+  }
+
+  #footer_social {
+    position: relative;
+    right: 5%;
+  }
+}
+
+#copyright {
+	text-align: center;
+  font-size: 0.9em;
+  position: relative;
+}
